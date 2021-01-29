@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'Merit Bank Services',
     headline: 'Info about the servies',
-    description:  'TESTING',
+    description:  'TESTINGdrtyert',
     buttonLabel: 'Join Today!',
     imgStart: '',
     img: 'images/svg-1.svg',

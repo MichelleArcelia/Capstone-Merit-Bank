@@ -25,12 +25,12 @@
 
 .footer-subscription-heading {
   margin-bottom: 24px;
-  font-size: 24px;
+  font-size: 15px;
 }
 
 .footer-subscription-text {
   margin-bottom: 24px;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .footer-input {
@@ -115,8 +115,8 @@
 .social-icons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 240px;
+  align-items: left;
+  width: 140px;
 }
 
 .social-logo {

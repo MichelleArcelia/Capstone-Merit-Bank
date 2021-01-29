@@ -10,6 +10,16 @@ function Login() {
             <HeroSection { ...homeObjThree } />
             <Pricing />
             <HeroSection { ...homeObjFour } />
+
+            <div className="modal" id="email-modal">
+                <div className="modal-content">
+                    <span className="close-btn">&times;</span>
+                    <div className="modal-content-left">
+                        <img src="" alt=""/>
+                    </div>
+                </div>
+            </div>
+
         </>
     )
 }

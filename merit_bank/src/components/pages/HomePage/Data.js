@@ -2,13 +2,13 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true, 
     lightTextDesc: true,
-    topLine: 'Online Banking Features',
-    headline: 'Some information of these features',
-    description:  'Macaroon cotton candy jujubes. Tootsie roll dragée caramels dragée powder bonbon. Tart chupa chups fruitcake tootsie roll macaroon croissant sesame snaps sugar plum candy canes. ',
-    buttonLabel: 'Register Today',
+    topLine: 'Merit Bank Experts at your side',
+    headline: 'Our savy financial experts work for YOU',
+    description:  'Our advisors use their knowledge and expertise to construct personalized financial plans that aim to achieve your financial goals. These plans include not only investments but also savings, budget, insurance, and tax strategies.',
+    buttonLabel: 'Begin Saving!',
     imgStart: '',
-    img: 'images/svg-1.svg',
-    alt: 'Merit Bank Card'
+    img: 'images/wallet.svg' ,
+    alt: 'Online Banking Image'
 };
 
 
@@ -17,12 +17,12 @@ export const homeObjTwo = {
     lightBg: true,
     lightText: false, 
     lightTextDesc: false,
-    topLine: 'Merit Bank Services',
-    headline: 'Some information of these features',
-    description: 'Tootsie roll gingerbread chocolate cake fruitcake chupa chups tart chocolate cake sweet roll tootsie roll. Marshmallow cotton candy apple pie bear claw halvah toffee biscuit. Gummi bears caramels candy cheesecake fruitcake croissant sweet roll.',
+    topLine: 'Merit Bank Feature',
+    headline: 'Online & mobile banking just got better than EVER',
+    description: 'Online and mobile banking provides convenience to customers who want to manage their finances while on-the-go. Customers interested should learn about both Merit Bank’s mobile banking app and online banking website to better manage their finances.',
     buttonLabel: 'Register Today',
     imgStart: '',
-    img: 'images/svg-1.svg',
+    img: 'images/undraw_online_banking_7jy4.svg',
     alt: 'Merit Bank Card'
 };
 
