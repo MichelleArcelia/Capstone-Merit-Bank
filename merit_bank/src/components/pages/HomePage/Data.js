@@ -3,7 +3,7 @@ export const homeObjOne = {
     lightText: true, 
     lightTextDesc: true,
     topLine: 'Merit Bank Experts at your side',
-    headline: 'Our savy financial experts work for YOU',
+    headline: 'Our savvy financial experts work for YOU',
     description:  'Our advisors use their knowledge and expertise to construct personalized financial plans that aim to achieve your financial goals. These plans include not only investments but also savings, budget, insurance, and tax strategies.',
     buttonLabel: 'Begin Saving!',
     imgStart: '',
@@ -20,7 +20,7 @@ export const homeObjTwo = {
     topLine: 'Merit Bank Feature',
     headline: 'Online & mobile banking just got better than EVER',
     description: 'Online and mobile banking provides convenience to customers who want to manage their finances while on-the-go. Customers interested should learn about both Merit Bank’s mobile banking app and online banking website to better manage their finances.',
-    buttonLabel: 'Register Today',
+    buttonLabel: 'Next Step!',
     imgStart: '',
     img: 'images/undraw_online_banking_7jy4.svg',
     alt: 'Merit Bank Card'
