@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../../HeroSection'
 //pulling data properties 
-import { homeObjOne, homeObjTwo } from './Data'
+import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
 import Pricing from '../../Pricing';
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
         <>
             <HeroSection { ...homeObjOne } />
             <HeroSection { ...homeObjTwo} />
+            <HeroSection { ...homeObjThree} />
         </>
     )
 }

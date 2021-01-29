@@ -18,7 +18,7 @@ export const homeObjTwo = {
     lightText: false, 
     lightTextDesc: false,
     topLine: 'Merit Bank Feature',
-    headline: 'Online & mobile banking just got better than EVER',
+    headline: 'Online & mobile banking just got BETTER than ever',
     description: 'Online and mobile banking provides convenience to customers who want to manage their finances while on-the-go. Customers interested should learn about both Merit Bank’s mobile banking app and online banking website to better manage their finances.',
     buttonLabel: 'Next Step!',
     imgStart: '',
@@ -33,12 +33,12 @@ export const homeObjThree= {
     lightBg: false,
     lightText: true, 
     lightTextDesc: true,
-    topLine: 'THIRD Box Test',
-    headline: 'Info about security',
-    description: 'We are testing all these things they should really actually say something for real',
-    buttonLabel: 'button 3',
+    topLine: 'Merit Bank Proven Security',
+    headline: 'Keeping you SAFE from fraud',
+    description: 'Computers and smartphones are gateways to a world of information, entertainment and services. Unfortunately, they can also open the door to criminals who want to gain access to your personal and ﬁnancial information for fraudulent purposes. Learn more about how Merit Bank can minimize your risk of falling victim to fraud.',
+    buttonLabel: 'Begin Today!',
     imgStart: '',
-    img: 'images/svg-1.svg',
+    img: 'images/undraw_secure_login_pdn4.svg',
     alt: 'Merit Bank Card'
 };
 
