@@ -2,9 +2,10 @@ import React from 'react'
 import HeroSection from '../../HeroSection'
 //pulling data properties 
 import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
-import Pricing from '../../Pricing';
+//import Pricing from '../../Pricing';
 
 function Home() {
+
     return (
         <>
             <HeroSection { ...homeObjOne } />
