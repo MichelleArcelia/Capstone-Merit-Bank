@@ -8,15 +8,7 @@ import Products from './components/pages/Products/Products';
 import Login from './components/pages/Login/Login';
 import Footer from './components/pages/Footer/Footer';
 
-
 function App() {
-
-
-
-
-
-
-
 
   return (
     
