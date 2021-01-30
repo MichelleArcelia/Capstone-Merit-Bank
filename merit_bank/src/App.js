@@ -11,6 +11,13 @@ import Footer from './components/pages/Footer/Footer';
 
 function App() {
 
+
+
+
+
+
+
+
   return (
     
     <Router>

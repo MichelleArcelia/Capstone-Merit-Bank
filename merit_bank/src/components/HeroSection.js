@@ -7,14 +7,16 @@ import "./modal.css";
 function HeroSection({
     lightBg, topLine, lightText, lightTextDesc, headline, description, buttonLabel, img, alt, imgStart 
 }) {
+
     return (
         <>
-            <div
-                className={lightBg ? "home__hero-section" : "home__hero-section darkBg"}>
+            <div className={lightBg ? "home__hero-section" : "home__hero-section darkBg"}>
 
                     <div className="container">
 
-                    <div className="row home__hero-row" style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
+                    <div className="row home__hero-row" 
+                    
+                    style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
                     
                         <div className="col">
                             <div className="home__hero-text-wrapper">
@@ -22,8 +24,9 @@ function HeroSection({
                                 </div>
                                 <h1 className={lightText ? 'heading' : 'heading dark'}>{ headline }</h1>
                                 <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}> { description } </p>
+
                                 <Link to="/login">
-                                    <Button className="popupLogin" buttonSize='btn--wide' buttonColor='blue'>{ buttonLabel }
+                                    <Button className="loginButton" buttonSize='btn--wide' buttonColor='blue'>{ buttonLabel }
                                     </Button>
                                 </Link>
                             </div>
@@ -44,21 +47,21 @@ function HeroSection({
             <div className="modal" id="email-modal">
                 <div className="modal-content">
                     <span className="close-btn">&times;</span>
+
+
                     <div className="modal-content-left">
-                        <img src="images/undraw_My_universe_re_txot.svg" alt=""/>
+                        <img id="modal-img" src="images/undraw_My_universe_re_txot.svg" alt=""/>
                     </div>
+
+
                     <div className="modal-content-right">
                         <form action="/" method="GET" className="modal-form" id="form">
+
                             <h1>GET started with us today! Create your account by filling out the information below.</h1>
 
                                 <div className="form-validation">
-                                    <input type="text" className="modal-input" id="fname" name="fname" placeholder="Enter your First Name"/>
-                                    <p>Error Message</p>
-                                </div>
-
-
-                                <div className="form-validation">
-                                    <input type="text" className="modal-input" id="lname" name="lname" placeholder="Enter your Last Name"/>
+                                    
+                                    <input type="text" className="modal-input" id="name" name="name" placeholder="Enter your Name"/>
                                     <p>Error Message</p>
                                 </div>
 
@@ -87,12 +90,6 @@ function HeroSection({
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
         </>
     );
 }
