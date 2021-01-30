@@ -7,6 +7,7 @@ import Services from './components/pages/Services/Services';
 import Products from './components/pages/Products/Products';
 import Login from './components/pages/Login/Login';
 import Footer from './components/pages/Footer/Footer';
+import Form from './components/pages/Form/FormSignup'
 
 function App() {
 
@@ -14,12 +15,14 @@ function App() {
     
     <Router>
         <Navbar />
+        <Form />
           <Switch>
             <Route path='/' exact component={ Home }/>
             <Route path='/services' component={ Services }/>
             <Route path='/products' component={ Products }/>
             <Route path='/login' component={ Login }/>
           </Switch>
+
           <Footer />
     </Router>
   );

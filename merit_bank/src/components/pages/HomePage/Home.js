@@ -4,6 +4,8 @@ import HeroSection from '../../HeroSection'
 import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
 //import Pricing from '../../Pricing';
 
+
+
 function Home() {
 
     return (
@@ -12,6 +14,7 @@ function Home() {
             <HeroSection { ...homeObjTwo} />
             <HeroSection { ...homeObjThree} />
             
+
 
         </>
     )
