@@ -1,8 +1,8 @@
 import { useState, useEffect} from 'react';
 
 // Use Form 
-
-const useForm = () => {
+//pass validate as a parameter 
+const useForm = (callback, validate) => {
     const [values, setValues] = useState({
         username: '',
         email: '',
@@ -12,6 +12,8 @@ const useForm = () => {
 
     const [errors, setErrors] = useState({});
 
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
     //e = event
 
     const handleChange = e => {
@@ -19,11 +21,30 @@ const useForm = () => {
         setValues({
             ...values,
             [name]: value
-            // above replaces this [e.target.name]: e.target.value
+            // above replaces this e.target.name: e.target.value
         });
     };
 
-    return { handleChange };
+//prevents the restart of the page after login 
+    const handleSubmit = e => {
+        e.preventDefault();
+
+        setErrors(validate(values));
+
+        setIsSubmitting(true);
+    };
+
+    useEffect (
+        () => {
+        if (Object.keys(errors).length === 0 && isSubmitting) {
+            callback();
+        }
+    },
+        [errors]
+    );
+
+
+    return { handleChange, handleSubmit, values, errors };
 };
 
 export default useForm;

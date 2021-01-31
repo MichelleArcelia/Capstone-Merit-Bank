@@ -1,10 +1,21 @@
-import React from 'react'
+import React from 'react';
+// import the custom hook
+import useForm from './useForm';
+import validate from './validateInfo';
+import './Form.css';
 
-const FormSignup = () => {
+// LINE 34: double AND - errors in user name IF TRUE return whatever we pass after that (in this case we are showcasing the "Username required" text) 
+
+const FormSignup = ({submitForm}) => {
+// ***** LOOK here if ERROR says something is not defined ******
+const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
+
+
+
     return (
 
         <div className="form-content-right">
-            <form className="form">
+            <form className="form" onSubmit={ handleSubmit }>
                 <h1>Get Started with us today! Create your account by filling out the information below!
                 </h1>
 
@@ -19,7 +30,12 @@ const FormSignup = () => {
                         name='username'
                         className='form-input'
                         placeholder='Enter your username'
+                        value={values.username}
+                        onChange={handleChange}
                     />
+                    
+                    { errors.username && <p>{errors.username}</p>}
+
                 </div>
 
 
@@ -34,7 +50,12 @@ const FormSignup = () => {
                         name='email'
                         className='form-input'
                         placeholder='Enter your email'
+                        value={values.email}
+                        onChange={handleChange}
                     />
+
+                    { errors.email && <p>{errors.email}</p>}
+
                 </div>
 
 
@@ -49,7 +70,12 @@ const FormSignup = () => {
                         name='password'
                         className='form-input'
                         placeholder='Enter your password'
+                        value={values.password}
+                        onChange={handleChange}
                     />
+
+                    { errors.password && <p>{errors.password}</p>}
+
                 </div>
 
 
@@ -62,11 +88,16 @@ const FormSignup = () => {
                         </label>
                     <input
                         id='password2'
-                        type='password2'
+                        type='password'
                         name='password2'
                         className='form-input'
                         placeholder='Confirm your password'
+                        value={values.password2}
+                        onChange={handleChange}
                     />
+
+                    { errors.password2 && <p>{errors.password2}</p>}
+
                 </div>
 
                 <button className="form-input-btn" type='submit'>Sign Up!</button>
