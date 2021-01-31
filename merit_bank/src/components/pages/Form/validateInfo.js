@@ -5,9 +5,9 @@ export default function validateInfo(values) {
     let errors = {}
 
 // SHOWS username required 
-    if(!values.username.trim()) {
+    /*if(!values.username.trim()) {
         errors.username = "Username required"
-    }
+    }*/
 
 // SHOWS email required - Long code will force an email format
 // if no value it will say email required 
@@ -28,11 +28,11 @@ export default function validateInfo(values) {
 
 
 //PASSWORD NEED TO MATCH
-    if(!values.password2) {
+    /*if(!values.password2) {
         errors.password2 = 'Password is required'
     } else if (values.password2 !== values.password) {
         errors.password2 = 'Passwords do not match'
-    }
+    }*/
 
     return errors;
 

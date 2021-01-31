@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
+import { AiOutlineBank } from 'react-icons/ai';
 
 //import icons
 import {
@@ -69,7 +70,7 @@ function Footer() {
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            <MdFingerprint className='navbar-icon' />
+                            <AiOutlineBank className='navbar-icon' />
                 MERIT BANK
             </Link>
                     </div>

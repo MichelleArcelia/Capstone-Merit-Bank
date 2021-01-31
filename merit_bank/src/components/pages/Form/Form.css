@@ -21,9 +21,9 @@
 
 .form-content-left {
   background: linear-gradient(
-    90deg,
-    rgb(39, 176, 255) 0%,
-    rgb(0, 232, 236) 100%
+    -45deg,
+    rgb(39, 255, 143) 0%,
+    rgb(0, 236, 55) 100%
   );
   border-radius: 10px 0 0 10px;
   position: relative;
@@ -74,8 +74,8 @@
 }
 
 .form h1 {
-  font-size: 1rem;
-  text-align: start;
+  font-size: 30px;
+  text-align: center;
   width: 80%;
   margin-bottom: 1rem;
   color: #fff;
@@ -123,12 +123,12 @@
   border-radius: 2px;
   background: linear-gradient(
     90deg,
-    rgb(39, 176, 255) 0%,
-    rgb(0, 232, 236) 100%
+    rgb(39, 255, 143) 0%,
+    rgb(0, 236, 55) 100%
   );
   outline: none;
   border: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
 }
 
@@ -136,7 +136,7 @@
   cursor: pointer;
   background: linear-gradient(
     90deg,
-    rgb(39, 143, 255) 0%,
+    rgb(39, 255, 143) 0%,
     rgb(12, 99, 250) 100%
   );
   transition: all 0.4s ease-out;

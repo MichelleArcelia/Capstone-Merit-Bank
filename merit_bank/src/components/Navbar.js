@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MdFingerprint } from 'react-icons/md';
+import { AiTwotoneBank } from 'react-icons/ai';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
 import './Navbar.css';
@@ -50,7 +51,7 @@ function Navbar() {
                 <div className='navbar-container container'>
                     <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
 
-                        <MdFingerprint className= 'navbar-icon' />
+                        <AiTwotoneBank className= 'navbar-icon' />
                         Merit Bank
 
                     </Link>
