@@ -1,4 +1,22 @@
-{"request": {"method": "GET", "url": "/AccountHolders", "headers": {}, "body": {}}, "response": {"status_code": 200, "headers": {"Content-Type": "application/json"}, "body": []}}
+{
+	"request": {
+		"method": "GET",
+		"url": "/AccountHolders",
+		"headers": {
+			
+		},
+		"body": {
+			
+		}
+	},
+	"response": {
+		"status_code": 200,
+		"headers": {
+			"Content-Type": "application/json"
+		},
+		"body": []
+	}
+}
 {"request": {"method": "POST", "url": "/AccountHolders", "headers": {"Content-Type": "application/json"}, "body": {"firstName": "Sadiq", "middleName": "", "lastName": "Manji", "ssn": "123456789"}}, "response": {"status_code": 201, "headers": {}, "body": {}}}
 {"request": {"method": "GET", "url": "/AccountHolders/1", "headers": {}, "body": {}}, "response": {"status_code": 200, "headers": {}, "body": {}}}
 {"request": {"method": "POST", "url": "/AccountHolders", "headers": {"Content-Type": "application/json"}, "body": {"firstName": "Sadiq", "middleName": "", "lastName": "Manji"}}, "response": {"status_code": 400, "headers": {}, "body": {}}}

@@ -7,6 +7,8 @@ import Services from './components/pages/Services/Services';
 import Products from './components/pages/Products/Products';
 import Login from './components/pages/Login/Login';
 import Footer from './components/pages/Footer/Footer';
+import Dashboard from './components/pages/Dashboard/Dashboard';
+//import Form from './components/pages/Form/FormSignup';
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
             <Route path='/services' component={ Services }/>
             <Route path='/products' component={ Products }/>
             <Route path='/login' component={ Login }/>
+            <Route path='/dashboard' component={ Dashboard }/>
           </Switch>
           <Footer />
     </Router>
