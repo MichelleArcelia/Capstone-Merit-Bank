@@ -4,6 +4,7 @@ import HeroSection from '../../HeroSection'
 //import { homeObjOne } from './Data'
 import Pricing from '../../Pricing';
 import DashboardElements from '../../pages/Dashboard/DashboardElements';
+//import DashboardTop from '../../pages/Dashboard/DashboardTop';
 import './Dashboard.css';
 //import Video from '.././public/images/video.mp4'
 //import { HeroContainer, HeroBg, VideoBg } from '../Dashboard/DashboardElements'
@@ -17,13 +18,20 @@ import { Link } from "react-router-dom";
 import Video from '../Dashboard/Video';
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
+import DashboardTop from './DashboardTop';
+import DashboardAccounts from './DashboardAccounts';
+import DashboardBottom from './DashboardBottom';
 
 function Dashboard() {
     return (
         <>
-            <DashboardElements />
 
-            <Pricing />
+            <DashboardElements />
+            <DashboardTop />
+
+            <DashboardAccounts />
+
+            <DashboardBottom />
         </>
     )
 }
