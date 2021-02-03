@@ -31,7 +31,7 @@ function Dashboard() {
 
             <DashboardAccounts />
 
-            <DashboardBottom />
+            
         </>
     )
 }

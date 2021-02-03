@@ -21,7 +21,6 @@ function DashboardAccounts() {
                         <div className="pricing__container">
 
 
-
                             <Link to="/login" className='Accounts__container-card'>
                                 <div className="Accounts__container-cardInfo">
 
