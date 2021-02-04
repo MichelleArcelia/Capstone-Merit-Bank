@@ -8,13 +8,25 @@ import { RiSafeLine } from 'react-icons/ri';
 import { RiSafe2Line } from 'react-icons/ri';
 import { IconContext } from 'react-icons/lib';
 import './Dashboard.css';
+import TransferMoney from './TransferMoney';
 
 
 function DashboardTop() {
     return (
         <IconContext.Provider value={{ color: '#fff', size: 30 }}>
+
+
+
+
             <div>
+            
+
+                   
                 <div className="pricing__section">
+
+
+
+
                     <div className="pricing__wrapper">
 
 
@@ -24,9 +36,11 @@ function DashboardTop() {
 
 
 
-                            <Link to="/login" className='UseableFunds__container-card'>
-                                
+                            <div className='UseableFunds__container-card'>
+                            <TransferMoney />
                                 <div className="UseableFunds__container-cardInfo">
+
+
                                     <p>Checking and Savings</p>
                                     <h1>Total Available Funds</h1>
                                 </div>
@@ -38,24 +52,22 @@ function DashboardTop() {
                                 </div>
 
 
-                                <div className='Transfer_Money_Button'>
-                                    <Button buttonSize='btn--tiny' buttonColor='blue'>
-                                        Transfer Money
-                                </Button>
-                                </div>
+
+                       
 
                                 <div>
 
                                 </div>
 
 
-                            </Link>
+                            </div>
 
 
 
 
 
-                            <Link to="/login" className='pricing__container-card'>
+
+                            <div className='pricing__container-card'>
                                 <div className="pricing__container-cardInfo">
 
                                     <p>CD and IRA</p>
@@ -63,11 +75,11 @@ function DashboardTop() {
                                     <h4>$367,983</h4>
                                     <p>Locked Funds</p>
 
-                                    <Button buttonSize='btn--tiny' buttonColor='blue'>
-                                        arrow
-                                </Button>
+                                   
+                                
                                 </div>
-                            </Link>
+                                
+                            </div>
 
 
 
@@ -84,3 +96,15 @@ function DashboardTop() {
 }
 
 export default DashboardTop;
+
+
+
+/*
+<div className='Transfer_Money_Button'>
+<Button buttonSize='btn--tiny' buttonColor='blue'>
+    Transfer Money
+</Button>
+
+</div>
+
+*/
