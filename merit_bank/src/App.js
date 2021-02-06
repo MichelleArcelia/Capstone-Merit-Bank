@@ -8,6 +8,10 @@ import Products from './components/pages/Products/Products';
 import Login from './components/pages/Login/Login';
 import Footer from './components/pages/Footer/Footer';
 import Dashboard from './components/pages/Dashboard/Dashboard';
+import CheckingDetails from './components/pages/Checking/CheckingDetails';
+import SavingDetails from './components/pages/Saving/SavingDetails';
+import CDDetails from './components/pages/CD/CDDetails';
+import IRADetails from './components/pages/IRA/IRADetails';
 //import Form from './components/pages/Form/FormSignup';
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
             <Route path='/products' component={ Products }/>
             <Route path='/login' component={ Login }/>
             <Route path='/dashboard' component={ Dashboard }/>
+            <Route path='/checking' component={ CheckingDetails }/>
+            <Route path='/savings' component={ SavingDetails }/>
+            <Route path='/cdaccount' component={ CDDetails }/>
+            <Route path='/iraaccount' component={ IRADetails }/>
           </Switch>
           <Footer />
     </Router>

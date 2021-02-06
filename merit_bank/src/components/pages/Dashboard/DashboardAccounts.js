@@ -11,19 +11,20 @@ import { IconContext } from 'react-icons/lib';
 import './Dashboard.css';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
+import Sidebar from '../../Sidebar/Sidebar';
 
 
 function DashboardAccounts() {
     return (
-        <IconContext.Provider value={{ color: 'black', size: 40 }}>
+        
             <div>
-                <div className="pricing__section">
+                <div className="pricing__section2">
                     <div className="pricing__wrapper">
 
                         <div className="pricing__container">
 
 
-                            <Link to="/login" className='Accounts__container-card'>
+                            <Link to="/checking" className='Accounts__container-card'>
                                 <div className="Accounts__container-cardInfo">
 
                                 <div className='Accounts_UsableFunds'>
@@ -45,11 +46,7 @@ function DashboardAccounts() {
 
 
 
-
-
-
-
-                            <Link to="/login" className='Accounts__container-card'>
+                            <Link to="/savings" className='Accounts__container-card'>
                                 <div className="Accounts__container-cardInfo">
 
                                 <div className='Accounts_UsableFunds'>
@@ -76,10 +73,7 @@ function DashboardAccounts() {
 
 
 
-
-
-
-                            <Link to="/login" className='Accounts__container-card'>
+                            <Link to="/cdaccount" className='Accounts__container-card'>
                                 <div className="Accounts__container-cardInfo">
 
                                 <div className='Accounts_UsableFunds'>
@@ -105,7 +99,7 @@ function DashboardAccounts() {
 
 
 
-                            <Link to="/login" className='Accounts__container-card'>
+                            <Link to="/iraaccount" className='Accounts__container-card'>
                                 <div className="Accounts__container-cardInfo">
 
                                 <div className='Accounts_UsableFunds'>
@@ -127,13 +121,15 @@ function DashboardAccounts() {
 
 
 
+
                         </div>
                     </div>
 
+                    < Sidebar />
 
                 </div>
             </div>
-        </IconContext.Provider>
+        
     );
 }
 

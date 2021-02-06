@@ -237,12 +237,13 @@
 
 
 .Accounts__container-card {
-    background: linear-gradient(45deg, #c1c1c1 0%, #909090 100%);
+    background: linear-gradient(45deg, #ebebeb 0%, #ebe9e9 100%);
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
     width: 280px;
     height: 280px;
     text-decoration: none;
     border-radius: 30px;
+    
 }
 
 
