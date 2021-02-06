@@ -20,6 +20,8 @@ import DashboardTop from './DashboardTop';
 import DashboardAccounts from './DashboardAccounts';
 import DashboardBottom from './DashboardBottom';
 import TransferMoney from './TransferMoney';
+import CardGroup from 'react-bootstrap/CardGroup';
+import Card from 'react-bootstrap/Card';
 
 //*******THIS DIDPLAYS THE DASHBOARD COMPONENTS*******
 

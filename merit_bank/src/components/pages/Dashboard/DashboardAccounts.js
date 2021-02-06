@@ -9,6 +9,8 @@ import { RiSafe2Line } from 'react-icons/ri';
 import { IconContext } from 'react-icons/lib';
 //import './Pricing.css';
 import './Dashboard.css';
+import CardGroup from 'react-bootstrap/CardGroup';
+import Card from 'react-bootstrap/Card';
 
 
 function DashboardAccounts() {
@@ -125,19 +127,10 @@ function DashboardAccounts() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </IconContext.Provider>
