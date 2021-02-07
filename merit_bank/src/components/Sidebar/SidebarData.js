@@ -8,19 +8,19 @@ import * as RiIcons from 'react-icons/ri';
 
 export const SidebarData = [
     {
-        title: 'Checking Account',
-        path: '/checking',
+        title: 'Checking',
+        path: '#',
         icon: <AiIcons.AiFillHome />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'subNav Info',
+                title: 'Account Details',
                 path: '/checking/users',
                 icon: <IoIcons.IoIosPaper />,
             },
             {
-                title: 'subNav Info 2 ',
+                title: 'Transactions',
                 path: '/checking/users2',
                 icon: <IoIcons.IoIosPaper />,
             },
@@ -33,19 +33,19 @@ export const SidebarData = [
 
 
     {
-        title: 'Savings Account',
-        path: '/savings',
+        title: 'Savings',
+        path: '#',
         icon: <AiIcons.AiFillHome />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'subNav Info 3',
+                title: 'Account Details',
                 path: '/checking/users',
                 icon: <IoIcons.IoIosPaper />,
             },
             {
-                title: 'subNav Info 4 ',
+                title: 'Transactions',
                 path: '/checking/users2',
                 icon: <IoIcons.IoIosPaper />,
             },
@@ -58,15 +58,61 @@ export const SidebarData = [
 
 
 
+    {
+        title: 'CD',
+        path: '#',
+        icon: <AiIcons.AiFillHome />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Account Details',
+                path: '/checking/users',
+                icon: <IoIcons.IoIosPaper />,
+            },
+            {
+                title: 'Transactions',
+                path: '/checking/users2',
+                icon: <IoIcons.IoIosPaper />,
+            },
+        ]
+    },
+
+
+
 
 
     {
-        title: 'CD Account',
-        path: '/cdaccount',
+        title: 'IRA',
+        path: '#',
+        icon: <AiIcons.AiFillHome />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Account Details',
+                path: '/checking/users',
+                icon: <IoIcons.IoIosPaper />,
+            },
+            {
+                title: 'Transactions',
+                path: '/checking/users2',
+                icon: <IoIcons.IoIosPaper />,
+            },
+        ]
+    },
+
+
+
+
+
+
+
+    {
+        title: 'LOGOUT',
+        path: '#',
         icon: <AiIcons.AiFillHome />,
             }
-
-
 
         ];
     

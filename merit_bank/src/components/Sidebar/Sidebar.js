@@ -22,7 +22,7 @@ const Nav = styled.div`
 const SidebarNav = styled.nav`
     background: #15171c;
     width: 250px;
-    height: 500px;
+    height: 700px;
     margin-top: 450px;
     display: flex;
     justify-content: center;
