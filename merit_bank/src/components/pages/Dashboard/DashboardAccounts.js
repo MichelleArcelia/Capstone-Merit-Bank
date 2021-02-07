@@ -58,7 +58,9 @@ function DashboardAccounts() {
         </div>
     </li>
 
+    </ul>
 
+    <ul className='cards'> 
 
     <li className="cards_item">
         <div className="card_content">
@@ -83,6 +85,15 @@ function DashboardAccounts() {
 
 
 </ul>
+
+
+
+
+
+
+
+
+
 
 
 </div> 
