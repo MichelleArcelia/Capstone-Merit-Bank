@@ -41,6 +41,9 @@ const SidebarWrap = styled.div`
 
 
 
+
+
+
 const NavIcon = styled(Link)`
     margin-left: 2rem;
     font-size: 2rem;
@@ -48,6 +51,7 @@ const NavIcon = styled(Link)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: #23DE06;
 `;
 
 
