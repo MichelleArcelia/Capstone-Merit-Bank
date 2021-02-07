@@ -33,12 +33,12 @@ function Dashboard() {
 
 
 
-
-            <DashboardElements />
+<DashboardElements />
+           
 <div className='SidebarDrop'>
             < Sidebar />
 
-            <DashboardTop />
+           
 
             <DashboardAccounts />
 
@@ -50,3 +50,6 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
+
+//   <DashboardTop />

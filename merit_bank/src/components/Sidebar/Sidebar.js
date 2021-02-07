@@ -51,7 +51,7 @@ const NavIcon = styled(Link)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #23DE06;
+    color: rgb(0, 255, 229);
 `;
 
 
