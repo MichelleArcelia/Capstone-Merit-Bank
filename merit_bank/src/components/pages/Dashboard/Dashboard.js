@@ -22,6 +22,7 @@ import DashboardBottom from './DashboardBottom';
 import TransferMoney from './TransferMoney';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
+import Sidebar from '../../Sidebar/Sidebar';
 
 //*******THIS DIDPLAYS THE DASHBOARD COMPONENTS*******
 
@@ -34,12 +35,14 @@ function Dashboard() {
 
 
             <DashboardElements />
+<div className='SidebarDrop'>
+            < Sidebar />
 
             <DashboardTop />
 
             <DashboardAccounts />
 
-
+            </div>
 
             
         </>

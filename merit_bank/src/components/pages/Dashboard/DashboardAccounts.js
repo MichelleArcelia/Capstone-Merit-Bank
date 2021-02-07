@@ -125,7 +125,7 @@ function DashboardAccounts() {
                         </div>
                     </div>
 
-                    < Sidebar />
+
 
                 </div>
             </div>
