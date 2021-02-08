@@ -23,14 +23,18 @@ function DashboardAccounts() {
     <div className='currentCards1'>  
 
 <div class="card">
-  <img src='images/undraw_Goals_re_lu76.svg' class="card-img-top" />
+  <img src='images/undraw_statistic_chart_38b6.svg' class="card-img-top" />
   <div class="card-body">
-    <h5 class="card-title">Card Title</h5>
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the
-      bulk of the card's content.
+    <h1 className="Top-card-title">Welcome Michelle</h1>
+    <p className="Top-card-text">
+    Merit Bank Advantage
+Plus Banking®
+
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p className="Top-card-text">
+    
+A good choice if you use direct deposit and want a straightforward banking account
+    </p>
   </div>
 </div>
 
@@ -38,7 +42,16 @@ function DashboardAccounts() {
 
 
 
-<ul className='cards'> 
+<ul className='ListCards'> 
+
+
+<li className="cards_item">
+        <div className="CLEARcard_content">
+
+        </div>
+    </li>
+
+
 
     <li className="cards_item">
         <div className="card_content">
@@ -57,10 +70,24 @@ function DashboardAccounts() {
         <button className="btn card_btn">More Details</button>
         </div>
     </li>
+
+
+
+
+
+
 
     </ul>
 
-    <ul className='cards'> 
+    <ul className='ListCards'> 
+
+
+    <li className="cards_item">
+        <div className="CLEARcard_content">
+
+        </div>
+    </li>
+
 
     <li className="cards_item">
         <div className="card_content">

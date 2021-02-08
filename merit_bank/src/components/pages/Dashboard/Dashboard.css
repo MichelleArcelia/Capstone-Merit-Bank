@@ -101,6 +101,31 @@
 
 
 
+
+
+.Top-card-title {
+    color: #00630f;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+
+.Top-card-text{
+    color: #00630f;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+
+
 .pricing__container {
     display: flex;
     justify-content: center;
@@ -412,6 +437,19 @@
     align-items: center;
 }
 
+
+.ListCards {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+
+
 .cards_item {
     display: flex;
     padding: 1rem;
@@ -437,7 +475,7 @@
 .card {
     background-color: white;
     border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -458,7 +496,14 @@
 
 
 
-
+.CLEARcard_content {
+    padding: 1rem;
+    width:500px;
+    
+    background: transparent;
+    
+    border-radius: 20px;
+}
 
 
 
@@ -466,7 +511,7 @@
     padding: 1rem;
     width:500px;
     
-    background: linear-gradient(to bottom left, #dfdede 40%, #bbbaba 100%);
+    background: linear-gradient(to bottom left, #e9e7e7 40%, #cecdcd 100%);
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
@@ -479,7 +524,7 @@
 
 
 .card_title {
-    color: #ffffff;
+    color: #3e3e3e;
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -488,7 +533,7 @@
 }
 
 .card_text {
-    color: #ffffff;
+    color: #545353;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;    
@@ -517,9 +562,10 @@
 
 .currentCards1{
     padding: 50px;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-right: 100px;
     align-items: center;
+    text-align: center;
 }
 
 

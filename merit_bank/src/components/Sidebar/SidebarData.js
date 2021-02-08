@@ -7,6 +7,22 @@ import * as RiIcons from 'react-icons/ri';
 
 
 export const SidebarData = [
+
+
+
+    {
+        title: 'Transfer Money',
+        path: '#',
+        icon: <AiIcons.AiFillHome />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    },
+
+
+
+
+
     {
         title: 'Checking',
         path: '#',
@@ -15,15 +31,11 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Account Details',
+                title: 'Transactions Details',
                 path: '/checking/users',
                 icon: <IoIcons.IoIosPaper />,
             },
-            {
-                title: 'Transactions',
-                path: '/checking/users2',
-                icon: <IoIcons.IoIosPaper />,
-            },
+
         ]
     },
 
@@ -40,15 +52,11 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Account Details',
+                title: 'Transactions Details',
                 path: '/checking/users',
                 icon: <IoIcons.IoIosPaper />,
             },
-            {
-                title: 'Transactions',
-                path: '/checking/users2',
-                icon: <IoIcons.IoIosPaper />,
-            },
+
         ]
     },
 
@@ -66,15 +74,11 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Account Details',
+                title: 'Transactions Details',
                 path: '/checking/users',
                 icon: <IoIcons.IoIosPaper />,
             },
-            {
-                title: 'Transactions',
-                path: '/checking/users2',
-                icon: <IoIcons.IoIosPaper />,
-            },
+
         ]
     },
 
@@ -90,15 +94,11 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Account Details',
+                title: 'Transactions Details',
                 path: '/checking/users',
                 icon: <IoIcons.IoIosPaper />,
             },
-            {
-                title: 'Transactions',
-                path: '/checking/users2',
-                icon: <IoIcons.IoIosPaper />,
-            },
+
         ]
     },
 
