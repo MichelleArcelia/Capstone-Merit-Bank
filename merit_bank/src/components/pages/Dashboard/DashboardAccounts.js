@@ -15,122 +15,112 @@ import Sidebar from '../../Sidebar/Sidebar';
 
 
 function DashboardAccounts() {
-    return (
-        
+  return (
 
 
+    <div className='currentCards1'>
 
-    <div className='currentCards1'>  
-
-<div class="card">
-  <img src='images/undraw_statistic_chart_38b6.svg' class="card-img-top" />
-  <div class="card-body">
-    <h1 className="Top-card-title">Welcome Michelle</h1>
-    <p className="Top-card-text">
-    Merit Bank Advantage
-Plus Banking®
-
-    </p>
-    <p className="Top-card-text">
-    
-A good choice if you use direct deposit and want a straightforward banking account
-    </p>
-  </div>
-</div>
-
-
-
-
-
-<ul className='ListCards'> 
-
-
-<li className="cards_item">
-        <div className="CLEARcard_content">
-
+      <div class="card">
+        <img src='images/undraw_statistic_chart_38b6.svg' class="card-img-top" />
+        <div class="card-body">
+          <h1 className="Top-card-title">Welcome Michelle</h1>
+            <p className="Top-card-text">
+              Merit Bank AdvantagePlus Banking®
+            </p>
+            <p className="Top-card-text">
+              A good choice if you use direct deposit and want a straightforward banking account
+            </p>
         </div>
-    </li>
+      </div>
+
+
+      <ul className='ListCards'>
+        <li className="cards_item">
+          <div className="CLEARcard_content">
+          </div>
+        </li>
+
+
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">Checking Balance</h2>
+            <p className="card_text2">$150,000</p>
+            <p className="card_text">Available Funds</p>
+            <Link to="/checking" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
 
 
 
-    <li className="cards_item">
-        <div className="card_content">
-        <h2 className="card_title">Current Checking Account Balance</h2>
-        <p className="card_text2">$200,000</p>
-        <p className="card_text">Available Funds</p>
-        <button className="btn card_btn">More Details</button>
-        </div>
-    </li>
-
-    <li className="cards_item">
-        <div className="card_content">
-        <h2 className="card_title">Current Checking Account Balance</h2>
-        <p className="card_text2">$200,000</p>
-        <p className="card_text">Available Funds</p>
-        <button className="btn card_btn">More Details</button>
-        </div>
-    </li>
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">Savings Balance</h2>
+            <p className="card_text2">$20,000</p>
+            <p className="card_text">Available Funds</p>
+            <Link to="/savings" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
 
 
 
+      </ul>
+      <ul className='ListCards'>
+        <li className="cards_item">
+          <div className="CLEARcard_content">
+          </div>
+        </li>
 
 
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">CD Balance</h2>
+            <p className="card_text2">$4,000</p>
+            <p className="card_text">Locked Funds</p>
+            <Link to="/cdaccount" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
 
 
-    </ul>
-
-    <ul className='ListCards'> 
-
-
-    <li className="cards_item">
-        <div className="CLEARcard_content">
-
-        </div>
-    </li>
-
-
-    <li className="cards_item">
-        <div className="card_content">
-        <h2 className="card_title">Current Checking Account Balance</h2>
-        <p className="card_text2">$200,000</p>
-        <p className="card_text">Available Funds</p>
-        <button className="btn card_btn">More Details</button>
-        </div>
-    </li>
-
-
-    <li className="cards_item">
-        <div className="card_content">
-        <h2 className="card_title">Current Checking Account Balance</h2>
-        <p className="card_text2">$200,000</p>
-        <p className="card_text">Available Funds</p>
-        <button className="btn card_btn">More Details</button>
-        </div>
-    </li>
-
-
-
-
-</ul>
-
-
-
-
-
-
-
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">IRA Balance</h2>
+            <p className="card_text2">$200,000</p>
+            <p className="card_text">Locked Funds</p>
+            <Link to="/ira" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
 
 
 
 
-</div> 
+      </ul>
 
 
 
 
 
-        
-    );
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+  );
 }
 
 export default DashboardAccounts
@@ -159,7 +149,7 @@ export default DashboardAccounts
                                     <p> Available Funds </p>
                                     </div>
 
-                                    
+
                                 </div>
                             </Link>
 
@@ -179,7 +169,7 @@ export default DashboardAccounts
                                     <p> Available Funds </p>
                                     </div>
 
-                             
+
                                 </div>
                             </Link>
 
@@ -204,7 +194,7 @@ export default DashboardAccounts
                                     <p> Locked Funds </p>
                                     </div>
 
-                                 
+
                                 </div>
                             </Link>
 
@@ -227,7 +217,7 @@ export default DashboardAccounts
                                     <p> Locked Funds </p>
                                     </div>
 
-                                  
+
                                 </div>
                             </Link>
 

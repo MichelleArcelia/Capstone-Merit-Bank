@@ -23,13 +23,13 @@ const SidebarNav = styled.nav`
     background: #15171c;
     width: 250px;
     height: 700px;
-    margin-top: 450px;
+    margin-top: 430px;
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
     left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
-   
+    transition: 350ms;
     z-index: 10;
 `;
 

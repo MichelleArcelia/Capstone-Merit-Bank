@@ -32,7 +32,7 @@ export const SidebarData = [
         subNav: [
             {
                 title: 'Transactions Details',
-                path: '/checking/users',
+                path: '/checking',
                 icon: <IoIcons.IoIosPaper />,
             },
 
@@ -53,7 +53,7 @@ export const SidebarData = [
         subNav: [
             {
                 title: 'Transactions Details',
-                path: '/checking/users',
+                path: '/savings',
                 icon: <IoIcons.IoIosPaper />,
             },
 
@@ -75,7 +75,7 @@ export const SidebarData = [
         subNav: [
             {
                 title: 'Transactions Details',
-                path: '/checking/users',
+                path: '/cdaccount',
                 icon: <IoIcons.IoIosPaper />,
             },
 
@@ -95,7 +95,7 @@ export const SidebarData = [
         subNav: [
             {
                 title: 'Transactions Details',
-                path: '/checking/users',
+                path: '/ira',
                 icon: <IoIcons.IoIosPaper />,
             },
 
