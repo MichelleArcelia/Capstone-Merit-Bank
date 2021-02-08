@@ -24,10 +24,10 @@ const { handleChange, values, handleSubmit, errors } = useForm(submitForm, valid
 
                 <div className='form-inputs'>
                     <label htmlFor='email' className='form-label'>
-                        Email
+                        Username/Email
                         </label>
                     <input
-                        id='email'
+                        id='username'
                         type='email'
                         name='email'
                         className='form-input'
@@ -78,4 +78,4 @@ const { handleChange, values, handleSubmit, errors } = useForm(submitForm, valid
     )
 }
 
-export default FormSignup
+export default FormSignup;
