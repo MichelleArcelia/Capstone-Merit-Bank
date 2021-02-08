@@ -12,7 +12,7 @@ import * as VscIcons from 'react-icons/vsc';
 export const SidebarData = [
 
     {
-        title: 'Your Account',
+        title: 'Profile',
         path: '#',
         icon: <VscIcons.VscAccount />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
