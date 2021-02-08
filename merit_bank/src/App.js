@@ -12,6 +12,9 @@ import CheckingDetails from './components/pages/Checking/CheckingDetails';
 import SavingDetails from './components/pages/Saving/SavingDetails';
 import CDDetails from './components/pages/CD/CDDetails';
 import IRADetails from './components/pages/IRA/IRADetails';
+import TransferM from "./components/pages/TransferM/TransferM";
+import Profile from "./components/pages/Profile/Profile";
+import Logout from "./components/pages/Logout/Logout";
 //import Form from './components/pages/Form/FormSignup';
 
 function App() {
@@ -30,6 +33,12 @@ function App() {
             <Route path='/savings' component={ SavingDetails }/>
             <Route path='/cdaccount' component={ CDDetails }/>
             <Route path='/iraaccount' component={ IRADetails }/>
+            <Route path='/transfermoney' component={ TransferM }/>
+            <Route path='/profile' component={ Profile }/>
+            <Route path='/logout' component={ Logout }/>
+
+
+            
           </Switch>
           <Footer />
     </Router>

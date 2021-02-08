@@ -10,7 +10,7 @@ import SubMenu from './SubMenu';
 
 const Nav = styled.div`
     background: #15171c;
-    height: 100px;
+    height: 50px;
     
     display: flex;
     justify-content: flex-start;
@@ -23,7 +23,7 @@ const SidebarNav = styled.nav`
     background: #15171c;
     width: 250px;
     
-    margin-top: 450px;
+    margin-top: 420px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -68,13 +68,13 @@ const Sidebar = () => {
     return (
         <>
             <Nav>
-                <NavIcon to='/dashboard'>
+                <NavIcon >
                     <FaIcons.FaBars onClick={ showSidebar }/> 
                 </NavIcon>
             </Nav>
             <SidebarNav sidebar={ sidebar }>
                 <SidebarWrap>
-                <NavIcon to='/dashboard'>
+                <NavIcon >
                     <AiIcons.AiOutlineClose onClick={ showSidebar }/> 
                 </NavIcon>
                 {SidebarData.map((item, index) => {

@@ -76,6 +76,9 @@
     color: #fff;
     font-size: 48px;
     text-align: center;
+    text-shadow: 4px 4px #041100;
+
+    
 }
 
 
@@ -296,6 +299,11 @@
     
 }
 
+
+.transctions.h2{
+    color:#065902;
+    
+}
 
 
 

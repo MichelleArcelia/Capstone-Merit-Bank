@@ -12,8 +12,19 @@ import * as VscIcons from 'react-icons/vsc';
 export const SidebarData = [
 
     {
+        title: 'Dashboard',
+        path: '/dashboard',
+        icon: <RiIcons.RiDashboardLine />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+    },
+
+
+
+
+    {
         title: 'Profile',
-        path: '#',
+        path: '/profile',
         icon: <VscIcons.VscAccount />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -22,7 +33,7 @@ export const SidebarData = [
 
     {
         title: 'Transfer Money',
-        path: '#',
+        path: '/transfermoney',
         icon: <FcIcons.FcMoneyTransfer />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -104,7 +115,7 @@ export const SidebarData = [
         subNav: [
             {
                 title: 'Transactions Details',
-                path: '/ira',
+                path: '/iraaccount',
                 icon: <BiIcons.BiMessageAltDetail />,
             },
 
@@ -119,7 +130,7 @@ export const SidebarData = [
 
     {
         title: 'LOGOUT',
-        path: '#',
+        path: '/logout',
         icon: <IoIcons.IoMdLogOut />,
             }
 
