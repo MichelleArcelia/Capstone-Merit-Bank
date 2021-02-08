@@ -16,8 +16,6 @@ function CheckingDetails() {
         <>
 
 
-
-
             <div className='HeroContainerDash'>
                 <video className='VideoBg' loop autoPlay>
                     <source src='videos/oil.mp4' type="video/mp4" />
@@ -31,9 +29,6 @@ function CheckingDetails() {
 
                 </div>
             </div>
-
-
-
 
 
 
