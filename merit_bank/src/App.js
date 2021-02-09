@@ -36,9 +36,6 @@ function App() {
             <Route path='/transfermoney' component={ TransferM }/>
             <Route path='/profile' component={ Profile }/>
             <Route path='/logout' component={ Logout }/>
-
-
-            
           </Switch>
           <Footer />
     </Router>
