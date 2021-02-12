@@ -10,6 +10,13 @@
     z-index: 999;
 }
 
+
+.img-top{
+width:300px;
+height:60px;
+}
+
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
