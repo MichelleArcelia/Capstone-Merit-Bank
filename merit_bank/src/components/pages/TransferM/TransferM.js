@@ -48,24 +48,26 @@ function TransferM() {
             <h2>FROM</h2>
             <div>
               <select class="account_dropdown">
-                <option value="Checking">Checking</option>
+                <option value="Personal Checking" selected>Personal Checking </option>
+                <option value="DBA Checking">DBA Checking</option>
                 <option value="Savings">Savings</option>
-                <option value="CD">CD</option>
-                <option value="IRA" selected>
-                  IRA
-                </option>
+                <option value="Certificate of Deposit">Certificate of Deposit</option>
+                <option value="Rollover IRA">Rollover IRA</option>
+                <option value="Roth IRA">Roth IRA</option>
+                <option value="Regular IRA">Regular IRA</option>
               </select>
             </div>
 
             <h2>TO</h2>
             <div>
               <select class="account_dropdown">
-                <option value="Savings">Savings</option>
-                <option value="Checking">Checking</option>
-                <option value="CD">CD</option>
-                <option value="IRA" selected>
-                  IRA
-                </option>
+              <option value="Personal Checking">Personal Checking </option>
+              <option value="DBA Checking">DBA Checking</option>
+                <option value="Savings" selected>Savings</option>
+                <option value="Certificate of Deposit">Certificate of Deposit</option>
+                <option value="Rollover IRA">Rollover IRA</option>
+                <option value="Roth IRA">Roth IRA</option>
+                <option value="Regular IRA">Regular IRA</option>
               </select>
             </div>
 
