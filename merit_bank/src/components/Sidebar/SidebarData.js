@@ -51,7 +51,7 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Transactions Details',
+                title: 'Accounts and Details',
                 path: '/checking',
                 icon: <BiIcons.BiMessageAltDetail />,
             },
@@ -87,7 +87,7 @@ export const SidebarData = [
 
 
     {
-        title: 'CD',
+        title: 'CDs',
         path: '#',
         icon: <RiIcons.RiSafeLine />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -107,14 +107,14 @@ export const SidebarData = [
 
 
     {
-        title: 'IRA',
+        title: 'IRAs',
         path: '#',
         icon: <AiIcons.AiOutlineSafetyCertificate />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Transactions Details',
+                title: 'Accounts and Details',
                 path: '/iraaccount',
                 icon: <BiIcons.BiMessageAltDetail />,
             },
