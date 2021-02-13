@@ -33,12 +33,14 @@ function IRADetails() {
                 <div class="card">
                     <img src='images/undraw_Success_factors_re_ce93.svg' class="card-img-top" />
                     <div class="card-body">
-                        <h1 className="Top-card-title">Michelle's IRA Account Details</h1>
+                        <h1 className="Top-card-title">IRA Account Details</h1>
                         <p className="Top-card-text">
                             Merit Bank AdvantagePlus Banking®
         </p>
                         <p className="Top-card-text">
-                            A good choice if you use direct deposit and want a straightforward banking account
+                        Choose from a wide variety of investment products.
+Refine your retirement strategy with innovative tools and calculators
+
         </p>
                     </div>
                 </div>
