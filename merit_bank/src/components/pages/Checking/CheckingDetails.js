@@ -25,18 +25,24 @@ function CheckingDetails() {
 
       <Sidebar />
 
-      <div className="currentCards1">
-        <div class="card2">
-          <img src="images/undraw_Payments_re_77x0.svg" class="card-img-top" />
-          <div class="card-body">
-            <h1 className="Top-card-title">
-              Checking Account Details
-            </h1>
-            <p className="Top-card-text">Merit Bank AdvantagePlus Banking®</p>
+
+
+
+      <div className='currentCards1'>
+
+<div class="card">
+    <img src='images/undraw_Payments_re_77x0.svg' class="card-img-top" />
+    <div class="card-body">
+        <h1 className="Top-card-title">Checking Account Details</h1>
+        <p className="Top-card-text">Merit Bank AdvantagePlus Banking®</p>
             <p className="Top-card-text">No minimums, no fees, no worries. Access to 16,000 ATMs and more than 4,700 branches</p>
-          </div>
-        </div>
-      </div>
+
+    </div>
+</div>
+</div>
+
+
+
 
 
 

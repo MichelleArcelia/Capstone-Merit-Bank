@@ -35,7 +35,7 @@ function SavingDetails() {
                 <div class="card">
                     <img src='images/undraw_Savings_re_eq4w.svg' class="card-img-top" />
                     <div class="card-body">
-                        <h1 className="Top-card-title">Michelle's Savings Account Details</h1>
+                        <h1 className="Top-card-title">Savings Account Details</h1>
                         <p className="Top-card-text">
                             Merit Bank AdvantagePlus Banking®
 </p>
