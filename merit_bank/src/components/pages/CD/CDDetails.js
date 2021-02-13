@@ -44,28 +44,7 @@ function CDDetails() {
 
 
 
-            <ul className="ListCards">
-
-                <li className="cards_item">
-                    <div className="CLEARcard_content"></div>
-                </li>
-
-
-                <Link to="/transfermoney">
-                    <div className="money-box2">
-
-                        <form id="moneyB2" action="" method="">
-                            
-                            <h2 className="card_title">TRANSFER MONEY</h2>
-
-                        </form>
-                    </div>
-                </Link>
-
-
-
-            </ul>
-
+      
 
 
 
@@ -98,7 +77,7 @@ function CDDetails() {
 
 
             <div className='transctions'>
-                <h2>CD TRANSACTION ACTIVITY</h2>
+                <h2>CERTIFICATE OF DEPOSIT TRANSACTION ACTIVITY</h2>
                 <table>
 
                     <thead>
@@ -135,6 +114,13 @@ function CDDetails() {
 
                     </tbody>
                 </table>
+
+
+
+
+                <span className="form-input-login"> Interested in seeing the best CD Offering Click <a href="/dashboard"> here</a> to find out!
+                </span>
+
 
 
             </div>

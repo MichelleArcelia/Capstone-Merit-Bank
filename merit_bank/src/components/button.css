@@ -9,6 +9,8 @@
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    background-color: #535252;
+    color: white;
 }
 
 .btn--primary {

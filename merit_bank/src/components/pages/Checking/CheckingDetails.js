@@ -26,49 +26,18 @@ function CheckingDetails() {
       <Sidebar />
 
 
-
-
       <div className='currentCards1'>
 
-<div class="card">
-    <img src='images/undraw_Payments_re_77x0.svg' class="card-img-top" />
-    <div class="card-body">
-        <h1 className="Top-card-title">Checking Account Details</h1>
-        <p className="Top-card-text">Merit Bank AdvantagePlus Banking®</p>
+        <div class="card">
+          <img src='images/undraw_Payments_re_77x0.svg' class="card-img-top" />
+          <div class="card-body">
+            <h1 className="Top-card-title">Checking Account Details</h1>
+            <p className="Top-card-text">Merit Bank AdvantagePlus Banking®</p>
             <p className="Top-card-text">No minimums, no fees, no worries. Access to 16,000 ATMs and more than 4,700 branches</p>
 
-    </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-      <ul className="ListCards">
-
-      <li className="cards_item">
-          <div className="CLEARcard_content"></div>
-        </li>
-        
-
-        <Link to="/transfermoney">
-        <div className="money-box2">
-              
-              <form id="moneyB2" action="" method="">
-              <h2 className="card_title">TRANSFER MONEY</h2>
-                  
-              </form>
-            </div>
-            </Link>
-        
-
-        
-      </ul>
-
+          </div>
+        </div>
+      </div>
 
 
       <ul className="ListCards">
@@ -171,3 +140,30 @@ function CheckingDetails() {
 }
 
 export default CheckingDetails;
+
+
+/*
+
+
+      <ul className="ListCards">
+
+      <li className="cards_item">
+          <div className="CLEARcard_content"></div>
+        </li>
+
+
+        <Link to="/transfermoney">
+        <div className="money-box2">
+
+              <form id="moneyB2" action="" method="">
+              <h2 className="card_title">TRANSFER MONEY</h2>
+
+              </form>
+            </div>
+            </Link>
+
+
+
+      </ul>
+
+      */

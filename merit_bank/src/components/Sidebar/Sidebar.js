@@ -65,23 +65,78 @@ const Sidebar = () => {
 
 
 
+    // showcases the hamburger bar menu
+    const [click, setClick] = useState(false)
+
+    // shows buttons
+    const [button, setButton] = useState(true);
+
+    //displays the hamburger contents on click - toggles to X
+    const handleClick = () => setClick(!click)
+
+    // closes the mobile menu when clicked
+    const closeMobileMenu = () => setClick(false)
+
+
+
+
     return (
         <>
             <Nav>
                 <NavIcon >
-                    <FaIcons.FaBars onClick={ showSidebar }/> 
+                    <FaIcons.FaBars onClick={showSidebar} />
                 </NavIcon>
+
+
+
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+
+                    <li className="nav-item">
+                        <Link to='/dashboard' className="nav-links2" onClick={closeMobileMenu}>
+                            DASHBOARD
+</Link>
+                    </li>
+
+                    <li className="nav-item">
+                        <Link to='/transfermoney' className="nav-links2" onClick={closeMobileMenu}>
+                            TRANSFER MONEY
+</Link>
+                    </li>
+
+
+                    <li className="nav-item">
+                        <Link to='/createaccount' className="nav-links2" onClick={closeMobileMenu}>
+                            CREATE NEW ACCOUNT
+</Link>
+                    </li>
+
+
+                </ul>
             </Nav>
-            <SidebarNav sidebar={ sidebar }>
+            <SidebarNav sidebar={sidebar}>
                 <SidebarWrap>
-                <NavIcon >
-                    <AiIcons.AiOutlineClose onClick={ showSidebar }/> 
-                </NavIcon>
-                {SidebarData.map((item, index) => {
-                    return <SubMenu item={ item } key={ index } />;
-                })}
+                    <NavIcon >
+                        <AiIcons.AiOutlineClose onClick={showSidebar} />
+                    </NavIcon>
+                    {SidebarData.map((item, index) => {
+                        return <SubMenu item={item} key={index} />;
+                    })}
+
+
+
+
+
+
+
                 </SidebarWrap>
+
+
+
             </SidebarNav>
+
+
+
+
         </>
     );
 };

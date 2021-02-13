@@ -24,19 +24,19 @@ const { handleChange, values, handleSubmit, errors } = useForm(submitForm, valid
 
                 <div className='form-inputs'>
                     <label htmlFor='email' className='form-label'>
-                        Username/Email
+                        Username
                         </label>
                     <input
                         id='username'
-                        type='email'
-                        name='email'
+                        type='text'
+                        name='username'
                         className='form-input'
-                        placeholder='Enter your email'
-                        value={values.email}
+                        placeholder='Username'
+                        value={values.username}
                         onChange={handleChange}
                     />
 
-                    { errors.email && <p>{errors.email}</p>}
+                    { errors.username && <p>{errors.username}</p>}
 
                 </div>
 
