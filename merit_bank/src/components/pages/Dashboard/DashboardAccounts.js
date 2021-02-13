@@ -65,9 +65,9 @@ function DashboardAccounts() {
           </div>
         </li>
 
-
-
       </ul>
+
+
       <ul className='ListCards'>
         <li className="cards_item">
           <div className="CLEARcard_content">

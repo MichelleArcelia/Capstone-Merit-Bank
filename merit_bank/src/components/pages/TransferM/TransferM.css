@@ -185,6 +185,43 @@
   background-color: #0c0680;
 }
 
+
+
+
+
+
+
+#moneyB2{
+  width: 400px;
+  height: 100px;
+  box-shadow: #131313;
+  align-items: center;
+  border-radius: 30px;
+  padding-top: 15px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  box-shadow: 5px 10px 20px rgb(0, 0, 0) inset;
+  background-image: linear-gradient(to top, #7d7a7a 0%, #575656 100%);
+}
+
+
+#moneyB2 h2{
+  padding: 20px;
+  color: rgb(49, 223, 22);
+  align-items: center;
+}
+
+
+.moneybox2{
+  width: 100px;
+  height: 100px;
+  background-color: #0c0680;
+}
+
+
+
+
+
 .services__card {
   
   height: 825px;
