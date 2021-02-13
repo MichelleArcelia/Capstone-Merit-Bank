@@ -46,12 +46,29 @@ function IRADetails() {
 
 
 
+            <ul className="ListCards">
+
+<li className="cards_item">
+    <div className="CLEARcard_content"></div>
+  </li>
+  
+
+  <Link to="/transfermoney">
+  <div className="money-box2">
+        
+        <form id="moneyB2" action="" method="">
+        <h2 className="card_title">TRANSFER MONEY</h2>
+            
+        </form>
+      </div>
+      </Link>
+  
+
+  
+</ul>
 
 
 
-            <Link to="/transfermoney" >
-                <button className="Transbtn">Transfer Money</button>
-            </Link>
 
 
             <ul className='ListCards'>
@@ -63,8 +80,8 @@ function IRADetails() {
 
                 <li className="cards_item">
                     <div className="card_content">
-                        <h2 className="card_title">CD Balance</h2>
-                        <p className="card_text2">$7,000</p>
+                        <h2 className="card_title">Regular IRA Balance</h2>
+                        <p className="card_text2">$5,000</p>
                         <p className="card_text">Locked Funds</p>
 
                     </div>
@@ -80,7 +97,87 @@ function IRADetails() {
 
 
             <div className='transctions'>
-                <h2>CD TRANSACTION ACTIVITY</h2>
+                <h2>REGULAR IRA TRANSACTION ACTIVITY</h2>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>FROM</th>
+                            <th>TO</th>
+                            <th>AMOUNT</th>
+                            <th>INTEREST RATE</th>
+                            <th>DATE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-column="FROM">Checking</td>
+                            <td data-column="TO">Regular IRA</td>
+                            <td data-column="AMOUNT">$1000</td>
+                            <td data-column="INTEREST RATE">20%</td>
+                            <td data-column="DATE">02/011/2021</td>
+                        </tr>
+                        <tr>
+                            <td data-column="FROM">Checking</td>
+                            <td data-column="TO">Regular IRA</td>
+                            <td data-column="AMOUNT">$2000</td>
+                            <td data-column="INTEREST RATE">5%</td>
+                            <td data-column="DATE">02/09/2021</td>
+                        </tr>
+                        <tr>
+                            <td data-column="FROM">Savings</td>
+                            <td data-column="TO">Regular IRA</td>
+                            <td data-column="AMOUNT">$2000</td>
+                            <td data-column="INTEREST RATE">10%</td>
+                            <td data-column="DATE">02/02/2021</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <ul className='ListCards'>
+                <li className="cards_item">
+                    <div className="CLEARcard_content">
+                    </div>
+                </li>
+
+
+                <li className="cards_item">
+                    <div className="card_content">
+                        <h2 className="card_title">Rollover IRA Balance</h2>
+                        <p className="card_text2">$2500</p>
+                        <p className="card_text">Locked Funds</p>
+
+                    </div>
+                </li>
+
+
+
+            </ul>
+
+
+
+
+
+
+            <div className='transctions'>
+                <h2>ROLLOVER IRA TRANSACTION ACTIVITY</h2>
                 <table>
 
                     <thead>
@@ -95,24 +192,24 @@ function IRADetails() {
                     <tbody>
                         <tr>
                             <td data-column="FROM">Savings</td>
-                            <td data-column="TO">IRA</td>
+                            <td data-column="TO">Rollover IRA</td>
                             <td data-column="AMOUNT">$1000</td>
                             <td data-column="INTEREST RATE">20%</td>
                             <td data-column="DATE">02/03/2021</td>
                         </tr>
                         <tr>
-                            <td data-column="FROM">Checking</td>
-                            <td data-column="TO">IRA</td>
-                            <td data-column="AMOUNT">$2000</td>
+                            <td data-column="FROM">Savings</td>
+                            <td data-column="TO">Rollover IRA</td>
+                            <td data-column="AMOUNT">$1000</td>
                             <td data-column="INTEREST RATE">5%</td>
-                            <td data-column="DATE">02/06/2021</td>
+                            <td data-column="DATE">02/02/2021</td>
                         </tr>
                         <tr>
                             <td data-column="FROM">Savings</td>
-                            <td data-column="TO">IRA</td>
-                            <td data-column="AMOUNT">$5000</td>
+                            <td data-column="TO">Rollover IRA</td>
+                            <td data-column="AMOUNT">$500</td>
                             <td data-column="INTEREST RATE">10%</td>
-                            <td data-column="DATE">02/09/2021</td>
+                            <td data-column="DATE">02/01/2021</td>
                         </tr>
 
                     </tbody>
@@ -124,6 +221,79 @@ function IRADetails() {
 
 
 
+
+
+
+
+
+
+
+            <ul className='ListCards'>
+                <li className="cards_item">
+                    <div className="CLEARcard_content">
+                    </div>
+                </li>
+
+
+                <li className="cards_item">
+                    <div className="card_content">
+                        <h2 className="card_title">ROTH IRA Balance</h2>
+                        <p className="card_text2">$1000</p>
+                        <p className="card_text">Locked Funds</p>
+
+                    </div>
+                </li>
+
+
+
+            </ul>
+
+
+
+
+
+
+            <div className='transctions'>
+                <h2>ROTH IRA TRANSACTION ACTIVITY</h2>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>FROM</th>
+                            <th>TO</th>
+                            <th>AMOUNT</th>
+                            <th>INTEREST RATE</th>
+                            <th>DATE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-column="FROM">Savings</td>
+                            <td data-column="TO">Roth IRA</td>
+                            <td data-column="AMOUNT">$100</td>
+                            <td data-column="INTEREST RATE">20%</td>
+                            <td data-column="DATE">02/07/2021</td>
+                        </tr>
+                        <tr>
+                            <td data-column="FROM">Checking</td>
+                            <td data-column="TO">Roth IRA</td>
+                            <td data-column="AMOUNT">$400</td>
+                            <td data-column="INTEREST RATE">5%</td>
+                            <td data-column="DATE">01/23/2021</td>
+                        </tr>
+                        <tr>
+                            <td data-column="FROM">Savings</td>
+                            <td data-column="TO">Roth IRA</td>
+                            <td data-column="AMOUNT">$500</td>
+                            <td data-column="INTEREST RATE">10%</td>
+                            <td data-column="DATE">12/29/2020</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
 
         </>
     )
