@@ -47,10 +47,29 @@ function SavingDetails() {
             </div>
 
 
+            <ul className="ListCards">
 
-            <Link to="/transfermoney" >
-                <button className="Transbtn">Transfer Money</button>
-            </Link>
+                <li className="cards_item">
+                    <div className="CLEARcard_content"></div>
+                </li>
+
+
+                <Link to="/transfermoney">
+                    <div className="money-box2">
+
+                        <form id="moneyB2" action="" method="">
+                            
+                            <h2 className="card_title">TRANSFER MONEY</h2>
+
+                        </form>
+                    </div>
+                </Link>
+
+
+
+            </ul>
+
+
 
 
             <ul className='ListCards'>

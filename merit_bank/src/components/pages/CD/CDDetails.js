@@ -45,14 +45,32 @@ function CDDetails() {
 
 
 
+            <ul className="ListCards">
+
+                <li className="cards_item">
+                    <div className="CLEARcard_content"></div>
+                </li>
+
+
+                <Link to="/transfermoney">
+                    <div className="money-box2">
+
+                        <form id="moneyB2" action="" method="">
+                            
+                            <h2 className="card_title">TRANSFER MONEY</h2>
+
+                        </form>
+                    </div>
+                </Link>
+
+
+
+            </ul>
 
 
 
 
 
-            <Link to="/transfermoney" >
-                <button className="Transbtn">Transfer Money</button>
-            </Link>
 
 
             <ul className='ListCards'>
@@ -128,3 +146,14 @@ function CDDetails() {
 }
 
 export default CDDetails
+
+
+
+/* 
+
+            <Link to="/transfermoney" >
+                <button className="Transbtn">Transfer Money</button>
+            </Link>
+
+
+*/

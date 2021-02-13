@@ -38,8 +38,8 @@ function IRADetails() {
                             Merit Bank AdvantagePlus Banking®
         </p>
                         <p className="Top-card-text">
-                        Choose from a wide variety of investment products.
-Refine your retirement strategy with innovative tools and calculators
+                            Choose from a wide variety of investment products.
+                            Refine your retirement strategy with innovative tools and calculators
 
         </p>
                     </div>
@@ -50,24 +50,24 @@ Refine your retirement strategy with innovative tools and calculators
 
             <ul className="ListCards">
 
-<li className="cards_item">
-    <div className="CLEARcard_content"></div>
-  </li>
-  
+                <li className="cards_item">
+                    <div className="CLEARcard_content"></div>
+                </li>
 
-  <Link to="/transfermoney">
-  <div className="money-box2">
-        
-        <form id="moneyB2" action="" method="">
-        <h2 className="card_title">TRANSFER MONEY</h2>
-            
-        </form>
-      </div>
-      </Link>
-  
 
-  
-</ul>
+                <Link to="/transfermoney">
+                    <div className="money-box2">
+
+                        <form id="moneyB2" action="" method="">
+                            <h2 className="card_title">TRANSFER MONEY</h2>
+
+                        </form>
+                    </div>
+                </Link>
+
+
+
+            </ul>
 
 
 
