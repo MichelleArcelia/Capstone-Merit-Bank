@@ -40,8 +40,7 @@ function SavingDetails() {
                             Merit Bank AdvantagePlus Banking®
 </p>
                         <p className="Top-card-text">
-                            A good choice if you use direct deposit and want a straightforward banking account
-</p>
+                        The high-yield Online Savings Account you deserve. Our award-winning savings account provides a rate that’s 4X the National Average.</p>
                     </div>
                 </div>
             </div>

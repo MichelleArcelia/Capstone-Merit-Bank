@@ -37,8 +37,7 @@ function CDDetails() {
                             Merit Bank AdvantagePlus Banking®
         </p>
                         <p className="Top-card-text">
-                            A good choice if you use direct deposit and want a straightforward banking account
-        </p>
+                        Looking for a slightly longer term—and slightly higher rate? Because extraordinary is always within reach.        </p>
                     </div>
                 </div>
             </div>
