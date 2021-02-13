@@ -16,7 +16,7 @@ function CDDetails() {
                 <div className='HeroContent'>
 
                     <h1 className='HeroH1'>
-                        MERIT BANK CD
+                        MERIT BANK CERTIFICATE OF DEPOSIT 
                 </h1>
 
                 </div>
@@ -32,7 +32,7 @@ function CDDetails() {
                 <div class="card">
                     <img src='images/undraw_Invest_re_8jl5.svg' class="card-img-top" />
                     <div class="card-body">
-                        <h1 className="Top-card-title">Michelle's CD Account Details</h1>
+                        <h1 className="Top-card-title">Certificate of Deposit Account Details</h1>
                         <p className="Top-card-text">
                             Merit Bank AdvantagePlus Banking®
         </p>
