@@ -43,8 +43,8 @@ function DashboardAccounts() {
 
         <li className="cards_item">
           <div className="card_content">
-            <h2 className="card_title">Checking Balance</h2>
-            <p className="card_text2">$150,000</p>
+            <h2 className="card_title">Personal Checking Balance</h2>
+            <p className="card_text2">$0</p>
             <p className="card_text">Available Funds</p>
             <Link to="/checking" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
@@ -56,15 +56,14 @@ function DashboardAccounts() {
 
         <li className="cards_item">
           <div className="card_content">
-            <h2 className="card_title">Savings Balance</h2>
-            <p className="card_text2">$20,000</p>
+            <h2 className="card_title">DBA Checking Balance</h2>
+            <p className="card_text2">$0</p>
             <p className="card_text">Available Funds</p>
             <Link to="/savings" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
             </Link>
           </div>
         </li>
-
       </ul>
 
 
@@ -77,8 +76,43 @@ function DashboardAccounts() {
 
         <li className="cards_item">
           <div className="card_content">
-            <h2 className="card_title">CD Balance</h2>
-            <p className="card_text2">$4,000</p>
+            <h2 className="card_title">Savings</h2>
+            <p className="card_text2">$0</p>
+            <p className="card_text">Available Funds</p>
+            <Link to="/cdaccount" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
+
+
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">Certificate of Deposit</h2>
+            <p className="card_text2">$0</p>
+            <p className="card_text">Locked Funds</p>
+            <Link to="/ira" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
+      </ul>
+
+
+
+
+
+      <ul className='ListCards'>
+        <li className="cards_item">
+          <div className="CLEARcard_content">
+          </div>
+        </li>
+
+
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">Regular IRA Balance</h2>
+            <p className="card_text2">$0</p>
             <p className="card_text">Locked Funds</p>
             <Link to="/cdaccount" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
@@ -89,35 +123,43 @@ function DashboardAccounts() {
 
         <li className="cards_item">
           <div className="card_content">
-            <h2 className="card_title">IRA Balance</h2>
-            <p className="card_text2">$200,000</p>
+            <h2 className="card_title">Rollover IRA Balance</h2>
+            <p className="card_text2">$20</p>
             <p className="card_text">Locked Funds</p>
             <Link to="/ira" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
             </Link>
           </div>
         </li>
-
-
-
-
       </ul>
 
 
 
 
 
+      <ul className='ListCards'>
+        <li className="cards_item">
+          <div className="CLEARcard_content">
+          </div>
+        </li>
 
 
 
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">Roth IRA Balance</h2>
+            <p className="card_text2">$0</p>
+            <p className="card_text">Locked Funds</p>
+            <Link to="/cdaccount" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
+        </ul>
 
 
 
     </div>
-
-
-
-
 
 
   );
