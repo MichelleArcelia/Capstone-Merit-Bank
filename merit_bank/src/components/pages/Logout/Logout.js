@@ -14,7 +14,7 @@ function Logout() {
             </div>
 
             <div className='Logout'>
-                <h1>You've been logged out, Michelle</h1>
+                <h1>You've been logged out!</h1>
                 <h3>Thanks for visiting, you've been safely signed out of your account. Until next time!</h3>
 
             </div>
