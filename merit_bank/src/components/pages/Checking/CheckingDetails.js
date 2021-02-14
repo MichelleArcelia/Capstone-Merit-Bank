@@ -35,6 +35,16 @@ function CheckingDetails() {
             <p className="Top-card-text">Merit Bank AdvantagePlus Banking®</p>
             <p className="Top-card-text">No minimums, no fees, no worries. Access to 16,000 ATMs and more than 4,700 branches</p>
 
+            <h2 className="IRAwarning">
+              When closing the checking account,
+
+                        </h2>
+            <h2 className="IRAwarning">
+              the balance has to be transferred to the savings account
+              only
+
+                        </h2>
+
           </div>
         </div>
       </div>

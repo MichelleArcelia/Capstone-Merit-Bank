@@ -39,6 +39,16 @@ function CDDetails() {
                         <p className="Top-card-text">
                         Looking for a slightly longer term—and slightly higher rate? Because extraordinary is always within reach.        </p>
                     
+
+
+                        <h1 className="IRAwarning">
+                        When closing, CDs balances are transferred
+
+                        </h1>
+                        <h1 className="IRAwarning">
+                        to either savings or checking account.
+
+                        </h1>
                     </div>
                 </div>
             </div>
