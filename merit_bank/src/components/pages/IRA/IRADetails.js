@@ -42,6 +42,11 @@ function IRADetails() {
                             Refine your retirement strategy with innovative tools and calculators
 
         </p>
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -50,7 +55,15 @@ function IRADetails() {
 
 
 
+            <li className="cards_item">
+                    <div className="card_content">
+                    <p className="IRAwarning">
+        When closing the IRA account, only 80% of the balance is transferred to the savings or
+checking account. 20% is taken away to IRS
+</p>
 
+                    </div>
+                </li>
 
 
 
@@ -59,6 +72,10 @@ function IRADetails() {
                     <div className="CLEARcard_content">
                     </div>
                 </li>
+
+
+
+
 
 
                 <li className="cards_item">

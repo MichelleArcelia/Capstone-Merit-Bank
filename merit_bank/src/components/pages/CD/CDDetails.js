@@ -38,16 +38,10 @@ function CDDetails() {
         </p>
                         <p className="Top-card-text">
                         Looking for a slightly longer term—and slightly higher rate? Because extraordinary is always within reach.        </p>
+                    
                     </div>
                 </div>
             </div>
-
-
-
-      
-
-
-
 
 
 
@@ -68,6 +62,24 @@ function CDDetails() {
                 </li>
 
 
+                <li className="cards_item">
+                    <div className="card_content">
+                        <h2 className="card_title">Suggested Optimal</h2>
+                        <h2 className="card_title">CD Calculator</h2>
+
+                        <p className="card_text">Initial Deposit</p>
+
+                      <input class="account_dropdown3" placeholder="$" name="amount" type="number" step="0.01" min="0.01" required="required" maxLength="6"/>
+
+                        <p className="card_text">Term Length</p>
+                        <p className="card_text">Interest Rate</p>
+ 
+                        <Link to="#" className='Accounts__container-card'>
+            <button className="btn card_btn">CALCULATE</button>
+            </Link>
+
+                    </div>
+                </li>
 
             </ul>
 
@@ -114,14 +126,6 @@ function CDDetails() {
 
                     </tbody>
                 </table>
-
-
-
-
-                <span className="form-input-login"> Interested in seeing the best CD Offering Click <a href="/dashboard"> here</a> to find out!
-                </span>
-
-
 
             </div>
 
