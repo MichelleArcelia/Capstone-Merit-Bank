@@ -1,179 +1,162 @@
-import React from "react";
-import TransferM from "../TransferM/TransferM";
-import Sidebar from "../../Sidebar/Sidebar";
-import "../../pages/Dashboard/Dashboard.css";
-import CardGroup from "react-bootstrap/CardGroup";
-import Card from "react-bootstrap/Card";
-import "../Checking/CheckingDetails.css";
-import { Link } from "react-router-dom";
-import DashboardElements from "../../pages/Dashboard/DashboardElements";
+import React, { useEffect } from 'react'
+import Sidebar from '../../Sidebar/Sidebar';
+import '../../pages/Dashboard/Dashboard.css';
+import '../Checking/CheckingDetails.css';
+import { connect } from 'react-redux'
 import "../TransferM/TransferM.css";
-import ReactPlayer from "react-player";
-
-function CheckingDetails() {
-  return (
-    <>
-      <div className="HeroContainerDash">
-        <video className="VideoBg" loop autoPlay>
-          <source src="videos/oil.mp4" type="video/mp4" />
-        </video>
-
-        <div className="HeroContent">
-          <h1 className="HeroH1">MERIT BANK CHECKING</h1>
-        </div>
-      </div>
-
-      <Sidebar />
+import NumberFormat from 'react-number-format';
+import HistoryCard from './HistoryCard';
 
 
-      <div className='currentCards1'>
+function CheckingDetails({user, checkingBalance, dbaBalance}) {
 
-        <div class="card">
-          <img src='images/undraw_Payments_re_77x0.svg' class="card-img-top" />
-          <div class="card-body">
-            <h1 className="Top-card-title">Checking Account Details</h1>
-            <p className="Top-card-text">Merit Bank AdvantagePlus Banking®</p>
-            <p className="Top-card-text">No minimums, no fees, no worries. Access to 16,000 ATMs and more than 4,700 branches</p>
+    useEffect(() => {
+        window.scrollTo(0,0)
+    });
 
-            <h2 className="IRAwarning">
-              When closing the checking account,
+    
+    const checkingHistory = user.checkingAccounts[0].transactions.map(account => {
+        if(account.transactionSuccess === true){
+                return (
 
-                        </h2>
-            <h2 className="IRAwarning">
-              the balance has to be transferred to the savings account
-              only
+                    <HistoryCard key={account.id} sourceAccount={account.sourceAccount} targetAccount={account.targetAccount} amount={account.amount}/>
+                );
+        }
 
-                        </h2>
-
-          </div>
-        </div>
-      </div>
+    })
 
 
-      <ul className="ListCards">
-        <li className="cards_item">
-          <div className="CLEARcard_content"></div>
-        </li>
+    const dbaHistory = user.dbacheckingAccounts[0].transactions.map(test => {
+        if(test.transactionSuccess === true){
 
-        <li className="cards_item">
-          <div className="card_content">
-            <h2 className="card_title">Personal Checking Balance</h2>
-            <p className="card_text2">$0</p>
-            <p className="card_text">Available Funds</p>
-          </div>
-        </li>
-      </ul>
+            return <HistoryCard key={test.id} sourceAccount={test.sourceAccount} targetAccount={test.targetAccount} amount={test.amount}/>
+        }
 
-      <div className="transctions">
-        <h2>Personal Checking Transaction Activity</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>FROM</th>
-              <th>TO</th>
-              <th>AMOUNT</th>
-              <th>DATE</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-column="FROM">Checking</td>
-              <td data-column="TO">Savings</td>
-              <td data-column="AMOUNT">$2700</td>
-              <td data-column="DATE">02/11/2021</td>
-            </tr>
-            <tr>
-              <td data-column="FROM">Checking</td>
-              <td data-column="TO">Savings</td>
-              <td data-column="AMOUNT">$850</td>
-              <td data-column="DATE">02/05/2021</td>
-            </tr>
-            <tr>
-              <td data-column="FROM">Checking</td>
-              <td data-column="TO">Savings</td>
-              <td data-column="AMOUNT">$500</td>
-              <td data-column="DATE">02/02/2021</td>
-            </tr>
-          </tbody>
-        </table>
+    })
 
-        <ul className="ListCards">
-          <li className="cards_item">
-            <div className="CLEARcard_content"></div>
-          </li>
+    return (
+        <>
 
-          <li className="cards_item">
-            <div className="card_content">
-              <h2 className="card_title">DBA Checking Balance</h2>
-              <p className="card_text2">$0</p>
-              <p className="card_text">Available Funds</p>
+
+            <div className='HeroContainerDash'>
+                <video className='VideoBg' loop autoPlay>
+                    <source src='videos/oil.mp4' type="video/mp4" />
+                </video>
+
+                <div className='HeroContent'>
+
+                    <h1 className='HeroH1'>
+                        MERIT BANK CHECKING
+                </h1>
+
+                </div>
             </div>
-          </li>
-        </ul>
 
-        <div className="transctions">
-          <h2>DBA Checking Transaction Activity</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>FROM</th>
-                <th>TO</th>
-                <th>AMOUNT</th>
-                <th>DATE</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-column="FROM">Checking</td>
-                <td data-column="TO">Savings</td>
-                <td data-column="AMOUNT">$15,800</td>
-                <td data-column="DATE">02/13/2021</td>
-              </tr>
-              <tr>
-                <td data-column="FROM">Checking</td>
-                <td data-column="TO">Savings</td>
-                <td data-column="AMOUNT">$70</td>
-                <td data-column="DATE">02/08/2021</td>
-              </tr>
-              <tr>
-                <td data-column="FROM">Checking</td>
-                <td data-column="TO">Savings</td>
-                <td data-column="AMOUNT">$450</td>
-                <td data-column="DATE">01/30/2021</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </>
-  );
+
+
+            < Sidebar />
+            <div className='currentCards1'>
+
+                <div class="card">
+                    <img src='images/undraw_Payments_re_77x0.svg' class="card-img-top" />
+                    <div class="card-body">
+                        <h1 className="Top-card-title">{user.firstName}'s Checking Account Details</h1>
+                        <p className="Top-card-text">
+                            Merit Bank AdvantagePlus Banking®
+                        </p>
+                        <p className="Top-card-text">
+                            No minimums, no fees, no worries. Access to 16,000 ATMs and more than 4,700 branches
+                        </p>
+                        <h2 className="IRAwarning">
+                            When closing the checking account,
+                        </h2>
+                        <h2 className="IRAwarning">
+                             the balance has to be transferred to the savings account only
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul className='ListCards'>
+                <li className="cards_item">
+                    <div className="CLEARcard_content"></div>
+                </li>
+
+
+                <li className="cards_item">
+                    <div className="card_content">
+                        <h2 className="card_title">Personal Checking Balance</h2>
+                        <p className="card_text2"><NumberFormat value={checkingBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
+                        <p className="card_text">Available Funds</p>
+
+                    </div>
+                </li>
+
+            </ul>
+
+
+
+
+
+
+            <div className='transctions'>
+                <h2>CHECKING TRANSACTION ACTIVITY</h2>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>FROM</th>
+                            <th>TO</th>
+                            <th>AMOUNT</th>
+                        </tr>
+                    </thead>
+                    {checkingHistory.slice(-10)}
+                </table>
+            </div>
+            <ul className="ListCards">
+                <li className="cards_item">
+                    <div className="CLEARcard_content"></div>
+                </li>
+
+                <li className="cards_item">
+                    <div className="card_content">
+                    <h2 className="card_title">DBA Checking Balance</h2>
+                    <p className="card_text2"><NumberFormat value={dbaBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
+                    <p className="card_text">Available Funds</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div className="transctions">
+                <h2>DBA Checking Transaction Activity</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>FROM</th>
+                        <th>TO</th>
+                        <th>AMOUNT</th>
+                    </tr>
+                    </thead>
+                {dbaHistory.slice(-10)}
+                </table>
+            </div>
+
+        </>
+    )
 }
-
-export default CheckingDetails;
-
-
-/*
-
-
-      <ul className="ListCards">
-
-      <li className="cards_item">
-          <div className="CLEARcard_content"></div>
-        </li>
-
-
-        <Link to="/transfermoney">
-        <div className="money-box2">
-
-              <form id="moneyB2" action="" method="">
-              <h2 className="card_title">TRANSFER MONEY</h2>
-
-              </form>
-            </div>
-            </Link>
-
-
-
-      </ul>
-
-      */
+const mapStateToProps = state => {
+    return {
+        user: state.User.user,
+        checkingBalance: state.Checking.balance,
+        dbaBalance: state.DBA.balance
+    }
+  }
+  
+  const mapDispatchToProps = dispatch => {
+    return {
+        
+    }
+  }
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(CheckingDetails);

@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { FaFire } from 'react-icons/fa'
-import { Button } from '../../Button'
-import { BsXDiamondFill } from 'react-icons/bs';
-import { GiCrystalize } from 'react-icons/gi';
-import { RiSafeLine } from 'react-icons/ri';
-import { RiSafe2Line } from 'react-icons/ri';
-import { IconContext } from 'react-icons/lib';
+import { connect } from 'react-redux'
+import { fetchUser } from '../../../redux/User/UserActions'
+import { fetchCheckingBalance, fetchSavingsBalance, fetchCDBalance, fetchDBABalance, fetchRothIRABalance, fetchRolloverIRABalance, fetchRegIRABalance  } from '../../../redux/Balance/BalanceActions'
 //import './Pricing.css';
 import './Dashboard.css';
-import CardGroup from 'react-bootstrap/CardGroup';
-import Card from 'react-bootstrap/Card';
-import Sidebar from '../../Sidebar/Sidebar';
+import NumberFormat from 'react-number-format';
 
 
-function DashboardAccounts() {
+
+
+function DashboardAccounts({fetchCheckingBalance, fetchSavingsBalance, fetchCDBalance, fetchDBABalance, fetchRothIRABalance, fetchRolloverIRABalance, fetchRegIRABalance, token, user, checkingBalance, savingsBalance, cdBalance, dbaBalance, rothBalance, rollBalance, regBalance}) {
+  useEffect(() => {
+    console.log('token: ' + token)
+    fetchCheckingBalance(token, 'CheckingAccount')
+    fetchSavingsBalance(token, 'SavingsAccount')
+    fetchCDBalance(token, 'CDAccount')
+    fetchDBABalance(token, 'DBACheckingAccount')
+    fetchRothIRABalance(token, 'RothIRA')
+    fetchRolloverIRABalance(token, 'RolloverIRA')
+    fetchRegIRABalance(token, 'RegularIRA')
+
+    
+
+},[])
+
+
+
   return (
 
 
@@ -23,7 +35,7 @@ function DashboardAccounts() {
       <div class="card">
         <img src='images/undraw_statistic_chart_38b6.svg' class="card-img-top" />
         <div class="card-body">
-          <h1 className="Top-card-title">Welcome Michelle</h1>
+          <h1 className="Top-card-title">{user.firstName} {user.lastName}</h1>
             <p className="Top-card-text">
               Merit Bank AdvantagePlus Banking®
             </p>
@@ -35,49 +47,35 @@ function DashboardAccounts() {
 
 
       <ul className='ListCards'>
-        <li className="cards_item">
-          <div className="CLEARcard_content">
-          </div>
-        </li>
 
 
         <li className="cards_item">
           <div className="card_content">
             <h2 className="card_title">Personal Checking Balance</h2>
-            <p className="card_text2">$0</p>
+            <p className="card_text2"><NumberFormat value={checkingBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
             <p className="card_text">Available Funds</p>
             <Link to="/checking" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
             </Link>
           </div>
         </li>
-
-
 
         <li className="cards_item">
           <div className="card_content">
             <h2 className="card_title">DBA Checking Balance</h2>
-            <p className="card_text2">$0</p>
+            <p className="card_text2"><NumberFormat value={dbaBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
             <p className="card_text">Available Funds</p>
             <Link to="/checking" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
             </Link>
           </div>
         </li>
-      </ul>
-
-
-      <ul className='ListCards'>
-        <li className="cards_item">
-          <div className="CLEARcard_content">
-          </div>
-        </li>
 
 
         <li className="cards_item">
           <div className="card_content">
-            <h2 className="card_title">Savings</h2>
-            <p className="card_text2">$0</p>
+            <h2 className="card_title">Savings Balance</h2>
+            <p className="card_text2"><NumberFormat value={savingsBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
             <p className="card_text">Available Funds</p>
             <Link to="/savings" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
@@ -86,35 +84,17 @@ function DashboardAccounts() {
         </li>
 
 
-        <li className="cards_item">
-          <div className="card_content">
-            <h2 className="card_title">Certificate of Deposit</h2>
-            <p className="card_text2">$0</p>
-            <p className="card_text">Locked Funds</p>
-            <Link to="/cdaccount" className='Accounts__container-card'>
-            <button className="btn card_btn">More Details</button>
-            </Link>
-          </div>
-        </li>
       </ul>
-
-
-
-
-
       <ul className='ListCards'>
-        <li className="cards_item">
-          <div className="CLEARcard_content">
-          </div>
-        </li>
+
 
 
         <li className="cards_item">
           <div className="card_content">
             <h2 className="card_title">Regular IRA Balance</h2>
-            <p className="card_text2">$0</p>
+            <p className="card_text2"><NumberFormat value={regBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
             <p className="card_text">Locked Funds</p>
-            <Link to="/iraaccount" className='Accounts__container-card'>
+            <Link to="/ira" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
             </Link>
           </div>
@@ -124,48 +104,97 @@ function DashboardAccounts() {
         <li className="cards_item">
           <div className="card_content">
             <h2 className="card_title">Rollover IRA Balance</h2>
-            <p className="card_text2">$20</p>
+            <p className="card_text2"><NumberFormat value={rollBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
             <p className="card_text">Locked Funds</p>
-            <Link to="/iraaccount" className='Accounts__container-card'>
+            <Link to="/ira" className='Accounts__container-card'>
             <button className="btn card_btn">More Details</button>
             </Link>
           </div>
         </li>
+
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">Roth IRA Balance</h2>
+            <p className="card_text2"><NumberFormat value={rothBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
+            <p className="card_text">Locked Funds</p>
+            <Link to="/ira" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
+
+
+
+
       </ul>
 
-
-
-
-
       <ul className='ListCards'>
+
+        <li className="cards_item">
+          <div className="CLEARcard_content">
+          </div>
+        </li>
+
+        <li className="cards_item">
+          <div className="card_content">
+            <h2 className="card_title">CD Balance</h2>
+            <p className="card_text2"><NumberFormat value={cdBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
+            <p className="card_text">Locked Funds</p>
+            <Link to="/cdaccount" className='Accounts__container-card'>
+            <button className="btn card_btn">More Details</button>
+            </Link>
+          </div>
+        </li>
+
         <li className="cards_item">
           <div className="CLEARcard_content">
           </div>
         </li>
 
 
-
-        <li className="cards_item">
-          <div className="card_content">
-            <h2 className="card_title">Roth IRA Balance</h2>
-            <p className="card_text2">$0</p>
-            <p className="card_text">Locked Funds</p>
-            <Link to="/iraaccount" className='Accounts__container-card'>
-            <button className="btn card_btn">More Details</button>
-            </Link>
-          </div>
-        </li>
-        </ul>
-
-
+      </ul>
 
     </div>
+
+
+
+
 
 
   );
 }
 
-export default DashboardAccounts
+const mapStateToProps = state => {
+  return {
+      isLoggedIn: state.isLoggedIn,
+      user: state.User.user,
+      token: state.Login.token,
+      checkingBalance: state.Checking.balance,
+      savingsBalance: state.Savings.balance,
+      cdBalance: state.CD.balance,
+      dbaBalance: state.DBA.balance,
+      rothBalance: state.Roth.balance,
+      rollBalance: state.Roll.balance,
+      regBalance: state.Reg.balance
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+      fetchUser: token => dispatch(fetchUser(token)),
+      fetchCheckingBalance: (token, account) => dispatch(fetchCheckingBalance(token, account)),
+      fetchSavingsBalance: (token, account) => dispatch(fetchSavingsBalance(token, account)),
+      fetchCDBalance: (token, account) => dispatch(fetchCDBalance(token, account)),
+      fetchDBABalance: (token, account) => dispatch(fetchDBABalance(token, account)),
+      fetchRothIRABalance: (token, account) => dispatch(fetchRothIRABalance(token, account)),
+      fetchRolloverIRABalance: (token, account) => dispatch(fetchRolloverIRABalance(token, account)),
+      fetchRegIRABalance: (token, account) => dispatch(fetchRegIRABalance(token, account)),
+      
+
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(DashboardAccounts);
 
 
 

@@ -1,11 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Sidebar from '../../Sidebar/Sidebar';
 import '../Checking/CheckingDetails.css';
 import { Link } from 'react-router-dom';
-import '../IRA/IRADetails.css';
+import { connect } from 'react-redux'
+import NumberFormat from 'react-number-format';
+import HistoryCard from '../Checking/HistoryCard'
 
 
-function IRADetails() {
+function IRADetails({rothBalance, regBalance, rollBalance, user}) {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    });
+
+    const rothHistory = user.rothIRA[0].transactions.slice(-10).map(account => {
+
+        if(account.transactionSuccess === true){
+                return <HistoryCard key={account.id} sourceAccount={account.sourceAccount} targetAccount={account.targetAccount} amount={account.amount}/>
+        }
+
+    })
+
+    const regHistory = user.regularIRA[0].transactions.slice(-10).map(account => {
+
+        if(account.transactionSuccess === true){
+                return <HistoryCard key={account.id} sourceAccount={account.sourceAccount} targetAccount={account.targetAccount} amount={account.amount}/>
+        }
+
+    })
+
+    const rollHistory = user.rolloverIRA[0].transactions.slice(-10).map(account => {
+
+        if(account.transactionSuccess === true){
+                return <HistoryCard key={account.id} sourceAccount={account.sourceAccount} targetAccount={account.targetAccount} amount={account.amount}/>
+        }
+
+    })
+
+
+
     return (
 
 
@@ -34,32 +67,15 @@ function IRADetails() {
                 <div class="card">
                     <img src='images/undraw_Success_factors_re_ce93.svg' class="card-img-top" />
                     <div class="card-body">
-                        <h1 className="Top-card-title">IRA Account Details</h1>
+                        <h1 className="Top-card-title">{user.firstName}'s IRA Account Details</h1>
                         <p className="Top-card-text">
-                            Merit Bank AdvantagePlus Banking®
-                        </p>
+                            Merit Bank AdvantagePlus Banking®</p>
                         <p className="Top-card-text">
-                            Choose from a wide variety of investment products.
-                        </p>
-
-
-                        <h1 className="IRAwarning">
-                            When closing the IRA account, only 80% of the balance is transferred to the savings or
-                            checking account. 20% is taken away to IRS
-                        </h1>
-
-
-
-
-
-
+                        Choose from a wide variety of investment products.
+                            Refine your retirement strategy with innovative tools and calculators</p>
                     </div>
                 </div>
             </div>
-
-
-
-
 
 
 
@@ -70,14 +86,10 @@ function IRADetails() {
                 </li>
 
 
-
-
-
-
                 <li className="cards_item">
                     <div className="card_content">
                         <h2 className="card_title">Regular IRA Balance</h2>
-                        <p className="card_text2">$5,000</p>
+                        <p className="card_text2"><NumberFormat value={regBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
                         <p className="card_text">Locked Funds</p>
 
                     </div>
@@ -101,51 +113,13 @@ function IRADetails() {
                             <th>FROM</th>
                             <th>TO</th>
                             <th>AMOUNT</th>
-                            <th>INTEREST RATE</th>
-                            <th>DATE</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td data-column="FROM">Checking</td>
-                            <td data-column="TO">Regular IRA</td>
-                            <td data-column="AMOUNT">$1000</td>
-                            <td data-column="INTEREST RATE">20%</td>
-                            <td data-column="DATE">02/011/2021</td>
-                        </tr>
-                        <tr>
-                            <td data-column="FROM">Checking</td>
-                            <td data-column="TO">Regular IRA</td>
-                            <td data-column="AMOUNT">$2000</td>
-                            <td data-column="INTEREST RATE">5%</td>
-                            <td data-column="DATE">02/09/2021</td>
-                        </tr>
-                        <tr>
-                            <td data-column="FROM">Savings</td>
-                            <td data-column="TO">Regular IRA</td>
-                            <td data-column="AMOUNT">$2000</td>
-                            <td data-column="INTEREST RATE">10%</td>
-                            <td data-column="DATE">02/02/2021</td>
-                        </tr>
-
-                    </tbody>
+                {regHistory.reverse()}
                 </table>
 
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <ul className='ListCards'>
                 <li className="cards_item">
@@ -157,7 +131,7 @@ function IRADetails() {
                 <li className="cards_item">
                     <div className="card_content">
                         <h2 className="card_title">Rollover IRA Balance</h2>
-                        <p className="card_text2">$2500</p>
+                        <p className="card_text2"><NumberFormat value={rollBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
                         <p className="card_text">Locked Funds</p>
 
                     </div>
@@ -166,12 +140,6 @@ function IRADetails() {
 
 
             </ul>
-
-
-
-
-
-
             <div className='transctions'>
                 <h2>ROLLOVER IRA TRANSACTION ACTIVITY</h2>
                 <table>
@@ -181,48 +149,13 @@ function IRADetails() {
                             <th>FROM</th>
                             <th>TO</th>
                             <th>AMOUNT</th>
-                            <th>INTEREST RATE</th>
-                            <th>DATE</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td data-column="FROM">Savings</td>
-                            <td data-column="TO">Rollover IRA</td>
-                            <td data-column="AMOUNT">$1000</td>
-                            <td data-column="INTEREST RATE">20%</td>
-                            <td data-column="DATE">02/03/2021</td>
-                        </tr>
-                        <tr>
-                            <td data-column="FROM">Savings</td>
-                            <td data-column="TO">Rollover IRA</td>
-                            <td data-column="AMOUNT">$1000</td>
-                            <td data-column="INTEREST RATE">5%</td>
-                            <td data-column="DATE">02/02/2021</td>
-                        </tr>
-                        <tr>
-                            <td data-column="FROM">Savings</td>
-                            <td data-column="TO">Rollover IRA</td>
-                            <td data-column="AMOUNT">$500</td>
-                            <td data-column="INTEREST RATE">10%</td>
-                            <td data-column="DATE">02/01/2021</td>
-                        </tr>
-
-                    </tbody>
+                {rollHistory.reverse()}
                 </table>
 
 
             </div>
-
-
-
-
-
-
-
-
-
-
 
             <ul className='ListCards'>
                 <li className="cards_item">
@@ -234,7 +167,7 @@ function IRADetails() {
                 <li className="cards_item">
                     <div className="card_content">
                         <h2 className="card_title">ROTH IRA Balance</h2>
-                        <p className="card_text2">$1000</p>
+                        <p className="card_text2"><NumberFormat value={rothBalance} decimalScale={2} fixedDecimalScale={true} displayType={'text'} thousandSeparator={true} prefix={'$'}/></p>
                         <p className="card_text">Locked Funds</p>
 
                     </div>
@@ -243,12 +176,6 @@ function IRADetails() {
 
 
             </ul>
-
-
-
-
-
-
             <div className='transctions'>
                 <h2>ROTH IRA TRANSACTION ACTIVITY</h2>
                 <table>
@@ -258,41 +185,32 @@ function IRADetails() {
                             <th>FROM</th>
                             <th>TO</th>
                             <th>AMOUNT</th>
-                            <th>INTEREST RATE</th>
-                            <th>DATE</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td data-column="FROM">Savings</td>
-                            <td data-column="TO">Roth IRA</td>
-                            <td data-column="AMOUNT">$100</td>
-                            <td data-column="INTEREST RATE">20%</td>
-                            <td data-column="DATE">02/07/2021</td>
-                        </tr>
-                        <tr>
-                            <td data-column="FROM">Checking</td>
-                            <td data-column="TO">Roth IRA</td>
-                            <td data-column="AMOUNT">$400</td>
-                            <td data-column="INTEREST RATE">5%</td>
-                            <td data-column="DATE">01/23/2021</td>
-                        </tr>
-                        <tr>
-                            <td data-column="FROM">Savings</td>
-                            <td data-column="TO">Roth IRA</td>
-                            <td data-column="AMOUNT">$500</td>
-                            <td data-column="INTEREST RATE">10%</td>
-                            <td data-column="DATE">12/29/2020</td>
-                        </tr>
-
-                    </tbody>
+                {rothHistory.reverse()}
                 </table>
 
 
             </div>
 
+
         </>
     )
 }
 
-export default IRADetails;
+const mapStateToProps = state => {
+    return {
+        user: state.User.user,
+        rothBalance: state.Roth.balance,
+        regBalance: state.Reg.balance,
+        rollBalance: state.Roll.balance
+    }
+  }
+  
+  const mapDispatchToProps = dispatch => {
+    return {
+        
+    }
+  }
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(IRADetails);

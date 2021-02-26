@@ -1,5 +1,5 @@
 .LeftSidePayment{
-    width: 700px;
+    width: 0x;
     padding: 100px;
 }
 
@@ -42,12 +42,10 @@
 
 .account_dropdown{
   width: 400px;
-  font-weight: 500;
+  font-weight: 100;
   font-size: 20px;
-  font-weight: 800;
   color:#093c01;
   align-content: center;
- 
   margin-top: 5px;
   margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
@@ -64,25 +62,7 @@
   font-weight: 800;
   color:#093c01;
   align-content: center;
- margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  height: 50px;
-}
-
-
-
-
-.account_dropdown3{
-  width: 200px;
-  font-weight: 900;
-  font-size: 20px;
-  font-weight: 800;
-  color:#141514;
-  align-content: center;
- margin-left: 5px;
+  margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
@@ -115,7 +95,7 @@
   font-size: small;
   font-style: italic;
   color: rgb(174, 174, 174);
-  margin-bottom: 30px;
+  margin-bottom: 1%;
 
 }
 
@@ -140,15 +120,14 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 70px;
+  padding: 60px;
 }
 
 .services h1 {
   background-color: #ff8177;
   background-image: linear-gradient(to right, #bcbcbc 0%, #878787 100%);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
@@ -159,15 +138,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  width:auto;
+  width:80%;
   
 }
 
 .flex h4{
-  font-size: 12px;
+  font-size: 20px;
   color:rgb(184, 180, 180);
   font-style: italic;
-  margin-left: 140px;
+  margin-top:-2%;
+  margin-left: 15%;
 }
 
 
@@ -250,7 +230,7 @@
   justify-content: center;
   color: #093c01;
   align-items: center;
-  margin-left: 400px;
+  margin-left: 70%;
   
   
   background: linear-gradient(
@@ -259,7 +239,6 @@
     #7bf7a6,
     #068074
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  transition: 0.3s ease-in;
 }
 
 /*background-image: linear-gradient(to right, #a6f47f 0%, #68fff0 100%); */
@@ -313,11 +292,20 @@ input[type=number] {
   text-align: center;
 }
 
+.services__card img {
+    width: 50%;
+    height: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+  
+
 .services__card p {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 1%;
   font-size: 20px;
-  color: rgb(108, 107, 107);
+  color: rgb(196, 196, 196);
 
 }
 
@@ -341,11 +329,7 @@ input[type=number] {
   cursor: pointer;
 }
 
-.services__card:hover {
-  transform: scale(1.075);
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
+
 
 @media screen and (max-width: 1300px) {
   .services__wrapper {

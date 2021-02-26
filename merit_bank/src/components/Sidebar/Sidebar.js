@@ -5,12 +5,13 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
-
+import { connect } from 'react-redux'
+import { fetchUser } from '../../redux/User/UserActions';
 
 
 const Nav = styled.div`
     background: #15171c;
-    height: 50px;
+    height: 60px;
     
     display: flex;
     justify-content: flex-start;
@@ -56,14 +57,12 @@ const NavIcon = styled(Link)`
 
 
 
-const Sidebar = () => {
+const Sidebar = ({fetchUser, token}) => {
 
     const [sidebar, setSidebar] = useState(false);
 
     // TRUE / FALSE
     const showSidebar = () => setSidebar(!sidebar);
-
-
 
     // showcases the hamburger bar menu
     const [click, setClick] = useState(false)
@@ -78,10 +77,8 @@ const Sidebar = () => {
     const closeMobileMenu = () => setClick(false)
 
 
-
-
     return (
-        <>
+        <>  
             <Nav>
                 <NavIcon >
                     <FaIcons.FaBars onClick={showSidebar} />
@@ -92,22 +89,22 @@ const Sidebar = () => {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
                     <li className="nav-item">
-                        <Link to='/dashboard' className="nav-links2" onClick={closeMobileMenu}>
+                        <Link to='/dashboard' className="nav-links2" onClick={closeMobileMenu, fetchUser(token)}>
                             DASHBOARD
-</Link>
+                        </Link>
                     </li>
 
                     <li className="nav-item">
-                        <Link to='/transfermoney' className="nav-links2" onClick={closeMobileMenu}>
+                        <Link to='/transfermoney' className="nav-links2" onClick={closeMobileMenu, window.scrollTo(0,0)}>
                             TRANSFER MONEY
-</Link>
+                        </Link>
                     </li>
 
 
                     <li className="nav-item">
                         <Link to='/createaccount' className="nav-links2" onClick={closeMobileMenu}>
                             CREATE NEW ACCOUNT
-</Link>
+                        </Link>
                     </li>
 
 
@@ -140,5 +137,17 @@ const Sidebar = () => {
         </>
     );
 };
-
-export default Sidebar;
+const mapStateToProps = state => {
+    return {
+        token: state.Login.token
+    }
+  }
+  
+  const mapDispatchToProps = dispatch => {
+    return {
+        fetchUser: token => dispatch(fetchUser(token))
+  
+    }
+  }
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Sidebar);
